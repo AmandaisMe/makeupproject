@@ -1,0 +1,21 @@
+{
+  "name": "makeupproject",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:Amandaisme/makeupproject.git"
+  },
+  "keywords": [
+    "makeupproject"
+  ],
+  "author": "Amanda",
+  "license": "ISC"
+}
