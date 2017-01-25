@@ -21,11 +21,11 @@ header
 */
 header { width: 100%; position: relative; }
 
-header #bigbanner { background: url(../img/imgindex/head.jpg) no-repeat center; width: 100%; height: 300px; display: block; }
+header #bigbanner { background: url(../img/imgindex/head.jpg) no-repeat center top; width: 100%; height: 300px; display: inline-block; top: 0; opacity: 1; }
 
-header #minbanner { background: url(../img/imgindex/min.jpg) no-repeat; width: 100%; height: 100px; display: none; }
+header #minbanner { background: url(../img/imgindex/min.jpg) no-repeat; width: 100%; height: 100px; display: block; position: absolute; top: 0; opacity: 0; }
 
-header span { position: absolute; right: 160px; bottom: 250px; }
+header img { position: absolute; right: 160px; top: 20px; cursor: pointer; }
 
 .headernav { background: #eee; width: 100%; display: -webkit-flex; justify-content: space-between; }
 
@@ -128,6 +128,8 @@ banner
 .banner { width: 100%; }
 
 .banner ul { width: 100%; height: 250px; overflow: hidden; position: relative; }
+
+.banner ul li { float: left; position: absolute; }
 
 .banner img { width: 100%; }
 

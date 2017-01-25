@@ -6,23 +6,36 @@ header
 
 header {
     width: 100%;
-    position: relative;
+    position:relative;
+   
     #bigbanner {
-        background: url(../img/imgindex/head.jpg) no-repeat center;
+        background: url(../img/imgindex/head.jpg) no-repeat center top;
         width: 100%;
         height: 300px;
-        display: block;
+        display:inline-block;
+        top: 0;
+        opacity:1;
+
+        
     }
     #minbanner {
-        background: url(../img/imgindex/min.jpg)no-repeat;
+        background: url(../img/imgindex/min.jpg) no-repeat ;
         width: 100%;
-        height: 100px;
-        display: none;
-    }
-    span {
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity:0;
+   } 
+        
+       
+        
+    
+    img {
         position: absolute;
         right: 160px;
-        bottom: 250px;
+        top: 20px;
+        cursor:pointer
     }
 }
 
@@ -31,6 +44,7 @@ header {
     width: 100%;
     display: -webkit-flex;
     justify-content: space-between;
+    
 }
 
 .headernav .wrap {
@@ -320,11 +334,16 @@ banner
         height: 250px;
         overflow: hidden;
         position: relative;
+        li{
+        float:left;
+        position:absolute;
+        }
     }
     img {
         width: 100%;
     }
 }
+
 
 
 /*

@@ -1,5 +1,27 @@
-// brandlist 
+
 $(function(){
+	//header
+	$img=$('.picitem').find("img");
+	$big=$('#bigbanner');
+	$small=$("#minbanner");
+	$img.on('click',function(){
+		$big.css({opacity:0}).hide();
+		$small.show().css({opacity:1,'position':'relative'});
+		$('.picitem').find("img").attr('src','img/imgindex/fold.jpg');
+	})
+	// .toggle(
+	// 	function(){
+	// 	$big.css({opacity:1}).show();
+	// 	$small.show().css({opacity:0,'position':'absolute'});
+	// 	$('.picitem').find("img").attr('src','img/imgindex/unfold.jpg');
+	// 	}
+	// )
+	
+
+	
+
+
+	// brandlist 
 	$submenulist=$('.submenulist');
 	$li=$submenulist.parent();
 	$li.on('mouseenter',function(){
@@ -8,8 +30,8 @@ $(function(){
 	});
 
 	//轮播图
-	$('.banner').find('ul').gdscarousel({width:'100%',height:'300px',page:'center',
-		imglist:['img/imgindex/banner1.jpg','img/imgindex/banner2.jpg','img/imgindex/banner3.jpg']});
+	// $('.banner').find('ul').gdscarousel({width:'100%',height:'300px',page:'center',
+	// 	});
 
 	$span=$('.brand').find('span');
 	$prolist=$('.prolist').children();
@@ -66,7 +88,8 @@ $(function(){
 		// })
 		
 		
-	})
+	});
+
 
 });
 
