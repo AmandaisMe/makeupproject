@@ -1,14 +1,46 @@
 
 $(function(){
+
+	//导航条
+   
+   $(window).on('scroll',function(){
+	   	$scroll=$(window).scrollTop();
+
+		if($scroll>400){
+			$('.navlist').fadeIn();
+			
+		}else {
+			$('.navlist').fadeOut();
+		}
+   });
+   //点击对应楼梯事件
+    $('.navlist').on('click','li',function(){
+    	// $index=$(this).index();
+    	$index = $(this).index();
+		scrollTop=$('body>div').eq($index-1).height()-300;
+
+		$('body').animate({scrollTop:scrollTop});
+    })
+
+
 	//header
 	$img=$('.picitem').find("img");
 	$big=$('#bigbanner');
 	$small=$("#minbanner");
 	$img.on('click',function(){
+		$big.css({opacity:1,'position': 'relative'}).show();
+		$small.hide().css({opacity:0});
+		$('.picitem').find("img").attr('src','img/imgindex/unfold.jpg').addClass('unfold').
+		on('click',function(){
+		console.log(1)
 		$big.css({opacity:0}).hide();
-		$small.show().css({opacity:1,'position':'relative'});
+		$small.show().css({opacity:1});
 		$('.picitem').find("img").attr('src','img/imgindex/fold.jpg');
-	})
+		})
+
+
+	});
+
 	// .toggle(
 	// 	function(){
 	// 	$big.css({opacity:1}).show();
@@ -16,7 +48,11 @@ $(function(){
 	// 	$('.picitem').find("img").attr('src','img/imgindex/unfold.jpg');
 	// 	}
 	// )
-	
+	// $img.on('click',function(){
+	// 	$(this).parent().find('a').toggle();
+	// 	$(this).parent().find("a").fadeToggle();
+	// 	$(this).parent().find('a').slideDown();
+	// })
 
 	
 
@@ -32,7 +68,9 @@ $(function(){
 	//轮播图
 	// $('.banner').find('ul').gdscarousel({width:'100%',height:'300px',page:'center',
 	// 	});
+	
 
+  //brandlist
 	$span=$('.brand').find('span');
 	$prolist=$('.prolist').children();
 	// console.log($prolist)
@@ -47,16 +85,16 @@ $(function(){
 	});
 	
 	//producelist
-		$img=$('.producelist').find('img');
-		$prod=$('.functionone');
+	// 	$img=$('.producelist').find('a');
+	// 	$prod=$('.functionone');
 		
-	$img.on('mouseenter',function(){
-		// $index=$(this).index();
-		// .parent().siblings().find('.functionone').hide()
-		$prod.show();
-	}).on('mouseleave',function(){
-		$prod.hide();
-	});
+	// $img.on('mouseenter',function(){
+	// 	$index=$(this).index();
+	// 	$prod.eq($index).show().siblings().find('.functionone').hide();
+		
+	// }).on('mouseleave',function(){
+	// 	$prod.hide();
+	// });
 
 	// $sub=$('.submenu');
 	
@@ -67,6 +105,7 @@ $(function(){
 	// 	$sub.eq($index).slideDown(200);
 	
 	// })
+	
 	
 	$sea=$('.seas');
 	$sea.on('mouseenter',function(){
