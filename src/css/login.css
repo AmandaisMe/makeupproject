@@ -53,7 +53,51 @@ nav .wrap .pic { background: url(../img/imgindex/tipinfo.jpg) no-repeat; width: 
 
 main { position: relative; background: url(../img/imgindex/login.jpg) no-repeat center; width: 100%; height: 784px; }
 
-main .loginhtml { width: 406px; height: 529px; background: #fff; position: absolute; top: 13%; right: 15%; }
+main .loginhtml { width: 406px; height: 529px; background: #fff; position: absolute; padding: 34px; top: 13%; right: 15%; }
+
+main .loginhtml table { width: 406px; height: 300px; }
+
+main .loginhtml table tr:nth-child(1) { line-height: 50px; font-size: 25px; }
+
+main .loginhtml table tr:nth-child(1) a { font-size: 16px; color: #00c8ff; }
+
+main .loginhtml table tr:nth-child(3) input { height: 30px; width: 350px; font-size: 16px; color: #6c6c6c; }
+
+main .loginhtml table tr:nth-child(5) input { height: 30px; width: 350px; font-size: 16px; color: #6c6c6c; }
+
+main .loginhtml table tr:nth-child(7) { line-height: 60px; }
+
+main .loginhtml table tr:nth-child(7) a { color: #00c8ff; }
+
+main .loginhtml table tr:nth-child(7) input { height: 30px; font-size: 16px; color: #6c6c6c; }
+
+main .loginhtml table tr:nth-child(8) { font-size: 12px; line-height: 40px; }
+
+main .loginhtml table tr:nth-child(9) { line-height: 40px; text-align: center; background: #00c8ff; }
+
+main .loginhtml table tr:nth-child(9) a { font-size: 20px; color: #fff; }
+
+main .loginhtml .hezuo { border-top: 1px dashed #000; padding-top: 17px; margin-top: 20px; }
+
+main .loginhtml .hezuo ul { width: 406px; }
+
+main .loginhtml .hezuo ul li { padding: 0 26px; float: left; height: 30px; }
+
+main .loginhtml .hezuo ul li a { font-size: 14px; color: #6c6c6c; }
+
+main .loginhtml .hezuo ul li:nth-child(1) { background: url(../img/imgindex/other_autoico.png) no-repeat; }
+
+main .loginhtml .hezuo ul li:nth-child(2) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -31px; }
+
+main .loginhtml .hezuo ul li:nth-child(3) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -62px; }
+
+main .loginhtml .hezuo ul li:nth-child(4) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -89px; }
+
+main .loginhtml .hezuo ul li:nth-child(5) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -119px; }
+
+main .loginhtml .hezuo ul li:nth-child(6) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -150px; }
+
+main .loginhtml .hezuo ul li:nth-child(7) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -176px; }
 
 footer { width: 100%; background: #fff; height: 200px; }
 
