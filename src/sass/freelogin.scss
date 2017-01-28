@@ -113,67 +113,68 @@ main{
         
         width:406px;
         height: 300px; 
-        input{
-         outline:none;
-         text-indent:7px;
-         &:focus{
-         border:2px solid #00c8ff;
-         }
-        }
-       tr{
-        &:nth-child(1){
-        line-height:50px;
-        font-size:25px;
-        a{
-        font-size:16px;
-        color:#00c8ff;
-        }
-        }
-        &:nth-child(3){
-        input{
-       
-        height:30px;
-        width:350px;
-        font-size:16px;
-        color:#6c6c6c;
-        }
-        } 
-         &:nth-child(5){
-        input{
-        height:30px;
-        width:350px;
-        font-size:16px;
-        color:#6c6c6c;
-        }
-        }
-         &:nth-child(7){
-         line-height:60px;
-         a{
-         color:#00c8ff;
-         }
-        input{
-        height:30px;
-        font-size:16px;
-        color:#6c6c6c;
-
-        }
-        }
-        &:nth-child(8){
-        font-size:12px;
-        line-height:40px;
-        }
-        &:nth-child(9){
             input{
-            line-height:40px;
-            text-align:center;
-            background:#00c8ff;
-             width: 403px;
-                font-size:20px;
-                color:#fff;
-                border:none;
+             outline:none;
+             text-indent:7px;
+             &:focus{
+             border:2px solid #00c8ff;
+             }
             }
+            tr{
+                span{
+                font-size:8px;
+                 color: red;
+                 display:none;
+                }
+                input{
+                
+                height:30px;
+                }
+                a{
+                color:#00c8ff;
+                }
+                &:nth-child(1){
+
+                font-size:20px;
+                    span{
+                    font-size:12px;
+                    color:#666;
+                    }
+                    a{
+                    font-size:20px;
+                    
+                    }
+                }
+                &:nth-child(2){
+                    input{
+                    width:330px;
+                    }
+                }
+                &:nth-child(3){
+                    input{
+                    width:330px;
+                    }
+                }
+                &:nth-child(4){
+                    input{
+                    width:330px;
+                    }
+                }
+                &:nth-child(6){
+                    button{
+                    line-height:40px;
+                    text-align:center;
+                    background:#00c8ff;
+                     width: 403px;
+                        font-size:20px;
+                        color:#fff;
+                        border:none;
+                    }
             
-        }
+                 }
+
+
+            }
        }
       
         }
@@ -181,6 +182,7 @@ main{
             border-top: 1px dashed #000;
             padding-top: 17px;
             margin-top: 20px;
+            color: #6c6c6c;
             ul{
             margin-top: 10px;
             width:406px;
@@ -225,7 +227,7 @@ main{
             }
          }
         }
-    }
+    
 }
 
 footer{

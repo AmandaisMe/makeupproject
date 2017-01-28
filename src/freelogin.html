@@ -3,10 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>login</title>
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/freelogin.css">
 	<script src='js/jquery-3.1.1.js'></script>
 	<script src='js/index.js'></script>
-	<script src='js/login.js'></script>
+	 <script src='js/freelogin.js'></script>
+
+
 </head>
 <body>
 	<div class="headernav">
@@ -74,61 +76,53 @@
 				<form action="">
 					<table>
 	        		<tr>
-	        			<td>登录</td>
-	        			<td></td>
-	        			<td></td>
-	        			<td><a href="freelogin.html">免费注册</a></td>
+	        			<td colspan="2">注册</td>
+	        			
+	        			<td><a href=""><span>已有知我账号?</span>登录</a></td>
 	        		</tr>
 	        		<tr>
-	        			<td>账号</td>
-	        			<td></td>
-	        			<td></td>
-	        			<td></td>
+	        			<td colspan="4"><input type="text" placeholder='请输入你的手机号' name='phone' required=''>
+	        			<br/><span>手机格式有误，请重新输入</span>
+	        			</td>
+	        			
 	        			
 	        		</tr>
+					
 	        		<tr>
 	        			<td colspan="4">
-	        			<input type="text" placeholder='请输入用户名/邮箱/手机号' name='username' required=''>
+	        			<input type="password" placeholder='请输入密码' name='password'required=''>
+	        			<br/><span>密码长度需6-16位字符</span>
 	        			</td>
 	        		</tr>
-	        		<tr>
-	        			<td>密码</td>
-	        			<td></td>
-	        			<td></td>
-	        			<td></td>
-	        			
-	        		</tr>
+	        		
 	        		<tr>
 	        			<td colspan="4">
-	        			<input type="password" placeholder='请输入密码' name='password'  required=''>
+	        			<input type="password" placeholder='确认密码' name='confirmpassword'required=''>
+	        			<br/><span>请输入确认密码！</span>
 	        			</td>
 	        		</tr>
+	        		
 	        		<tr>
-	        			<td>验证码</td>
-	        			<td></td>
-	        			<td></td>
-	        			<td></td>
-	        			
-	        		</tr>
-	        		<tr>
-	        			<td>
-	        			<input type="text" placeholder='请输入验证码' name='identifyingcode' required=''>
+	        			<td >
+	        			<input type="text" placeholder='请输入验证码' name='identifyingcode'required=''>
+	        			<br/><span>验证码有误,请重新输入</span>
 	        			</td>
 	        			<td></td>
-	        			<td><img src="img/imgindex/verifycode.png" alt=""></td>
+	        			<td><img src="img/imgindex/verifycode (1).png" alt=""></td>
 	        			<td><a href="">换一张</a></td>
 	        		</tr>
-	        		<tr>
-	        			<td><input type="checkbox" checked="" >自动登录</td>
-	        			<td></td>
-	        			<td></td>
-	        			<td><a href="">忘记密码?</a></td>
-	        		</tr>
+	        	
+					
 					<tr>
-						<td colspan="4">
-							<input type="submit" value="登录">
-						</td>
 						
+						<td colspan="4">
+							<input type="submit" value="同意协议并注册">
+						</td>
+							
+						
+					</tr>
+					<tr >
+						<td><a href="http://www.zhiwo.com/help/user_terms">《知我网用户协议》</a></td>
 					</tr>
 					
 					

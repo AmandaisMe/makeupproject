@@ -61,45 +61,47 @@ main .loginhtml table input { outline: none; text-indent: 7px; }
 
 main .loginhtml table input:focus { border: 2px solid #00c8ff; }
 
-main .loginhtml table tr:nth-child(1) { line-height: 50px; font-size: 25px; }
+main .loginhtml table tr span { font-size: 8px; color: red; display: none; }
 
-main .loginhtml table tr:nth-child(1) a { font-size: 16px; color: #00c8ff; }
+main .loginhtml table tr input { height: 30px; }
 
-main .loginhtml table tr:nth-child(3) input { height: 30px; width: 350px; font-size: 16px; color: #6c6c6c; }
+main .loginhtml table tr a { color: #00c8ff; }
 
-main .loginhtml table tr:nth-child(5) input { height: 30px; width: 350px; font-size: 16px; color: #6c6c6c; }
+main .loginhtml table tr:nth-child(1) { font-size: 20px; }
 
-main .loginhtml table tr:nth-child(7) { line-height: 60px; }
+main .loginhtml table tr:nth-child(1) span { font-size: 12px; color: #666; }
 
-main .loginhtml table tr:nth-child(7) a { color: #00c8ff; }
+main .loginhtml table tr:nth-child(1) a { font-size: 20px; }
 
-main .loginhtml table tr:nth-child(7) input { height: 30px; font-size: 16px; color: #6c6c6c; }
+main .loginhtml table tr:nth-child(2) input { width: 330px; }
 
-main .loginhtml table tr:nth-child(8) { font-size: 12px; line-height: 40px; }
+main .loginhtml table tr:nth-child(3) input { width: 330px; }
 
-main .loginhtml table tr:nth-child(9) input { line-height: 40px; text-align: center; background: #00c8ff; width: 403px; font-size: 20px; color: #fff; border: none; }
+main .loginhtml table tr:nth-child(4) input { width: 330px; }
 
-main .loginhtml .hezuo { border-top: 1px dashed #000; padding-top: 17px; margin-top: 20px; }
+main .loginhtml table tr:nth-child(6) button { line-height: 40px; text-align: center; background: #00c8ff; width: 403px; font-size: 20px; color: #fff; border: none; }
 
-main .loginhtml .hezuo ul { margin-top: 10px; width: 406px; }
+main .hezuo { border-top: 1px dashed #000; padding-top: 17px; margin-top: 20px; color: #6c6c6c; }
 
-main .loginhtml .hezuo ul li { padding: 0 26px; float: left; height: 30px; }
+main .hezuo ul { margin-top: 10px; width: 406px; }
 
-main .loginhtml .hezuo ul li a { font-size: 14px; color: #6c6c6c; }
+main .hezuo ul li { padding: 0 26px; float: left; height: 30px; }
 
-main .loginhtml .hezuo ul li:nth-child(1) { background: url(../img/imgindex/other_autoico.png) no-repeat; }
+main .hezuo ul li a { font-size: 14px; color: #6c6c6c; }
 
-main .loginhtml .hezuo ul li:nth-child(2) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -31px; }
+main .hezuo ul li:nth-child(1) { background: url(../img/imgindex/other_autoico.png) no-repeat; }
 
-main .loginhtml .hezuo ul li:nth-child(3) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -62px; }
+main .hezuo ul li:nth-child(2) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -31px; }
 
-main .loginhtml .hezuo ul li:nth-child(4) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -89px; }
+main .hezuo ul li:nth-child(3) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -62px; }
 
-main .loginhtml .hezuo ul li:nth-child(5) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -119px; }
+main .hezuo ul li:nth-child(4) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -89px; }
 
-main .loginhtml .hezuo ul li:nth-child(6) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -150px; }
+main .hezuo ul li:nth-child(5) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -119px; }
 
-main .loginhtml .hezuo ul li:nth-child(7) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -176px; }
+main .hezuo ul li:nth-child(6) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -150px; }
+
+main .hezuo ul li:nth-child(7) { position: relative; background: url(../img/imgindex/other_autoico.png) no-repeat 0 -176px; }
 
 footer { width: 100%; background: #fff; height: 200px; }
 
