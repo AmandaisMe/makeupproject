@@ -31,17 +31,27 @@ $(function(){
 			_confirmpassword.siblings('span').hide()
 
 		}
+	});
+		
+	
+	$(':button').click(function(){
+
+				$.post('php/freelogin.php',{
+					phone:$('[name=phone]').val(),
+					password: $('[name=password]').val(),
+					confirm: $('[name=confirmpassword]').val(),
+
+				}, function(response){
+					
+					var $obj = eval('(' + response + ')');
+
+					if($obj.state){
+						window.location.href='index.html';
+					} else {
+
+						alert($obj.message);
+						location.reload();
+					}
+				})				
 	})
-			// var phone=$("[name=phone]").val();
-
-			// if(!/^1[34578]\d{9}$/.test(phone)){
-
-					
-
-			// 		$("[name=phone]").focus();
-					
-			// 		return false;
-			// }
-	
-	
 })

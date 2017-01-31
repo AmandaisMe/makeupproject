@@ -22,6 +22,33 @@ $(function(){
 		$('body').animate({scrollTop:scrollTop});
     })
 
+    //栏目side
+    $sidenavli=$('.sidenav').find('li');
+    $sidecarspan=$('.mycar');
+
+    $sidenavli.on('mouseleave',function(){
+    	$sidenavli.find('div').fadeOut();
+    })
+    $sidenavli.on('mouseenter',function(){
+    	   $this=$(this).index();
+    		$sidenavli.eq($this).addClass('backcolor').siblings().removeClass('backcolor');
+    		$sidenavli.eq($this).find('div').fadeIn();
+    	
+    }).trigger('mouseleave');
+
+    $sidenavli.on('click',function(){
+    	$this=$(this).index();
+    	$sidenavli.eq($this).find('section').fadeIn();
+
+    })
+    $sidecarspan.on('click','span',function(){
+    	$('.sidecarlist').hide();
+    })
+
+
+
+
+
 
 	//header
 	$img=$('.picitem').find("img");

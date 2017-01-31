@@ -161,12 +161,13 @@ main{
                     }
                 }
                 &:nth-child(6){
-                    button{
-                    line-height:40px;
+                    input{
+                    -webkit-appearance: none;
+                    line-height:31px;
                     text-align:center;
                     background:#00c8ff;
                      width: 403px;
-                        font-size:20px;
+                        font-size:18px;
                         color:#fff;
                         border:none;
                     }

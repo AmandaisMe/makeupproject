@@ -121,6 +121,11 @@ main{
          }
         }
        tr{
+       span{
+       color:red;
+       font-size:8px;
+       display:none;
+       }
         &:nth-child(1){
         line-height:50px;
         font-size:25px;

@@ -79,7 +79,7 @@ main .loginhtml table tr:nth-child(3) input { width: 330px; }
 
 main .loginhtml table tr:nth-child(4) input { width: 330px; }
 
-main .loginhtml table tr:nth-child(6) button { line-height: 40px; text-align: center; background: #00c8ff; width: 403px; font-size: 20px; color: #fff; border: none; }
+main .loginhtml table tr:nth-child(6) input { -webkit-appearance: none; line-height: 31px; text-align: center; background: #00c8ff; width: 403px; font-size: 18px; color: #fff; border: none; }
 
 main .hezuo { border-top: 1px dashed #000; padding-top: 17px; margin-top: 20px; color: #6c6c6c; }
 

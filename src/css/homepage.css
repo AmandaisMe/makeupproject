@@ -29,6 +29,82 @@ header img { position: absolute; right: 160px; top: 20px; cursor: pointer; z-ind
 
 .headernav { background: #eee; width: 100%; display: -webkit-flex; justify-content: space-between; position: relative; }
 
+.side { width: 34px; height: 100%; background: #6c6c6c; position: fixed; right: 0; top: 0; z-index: 10; }
+
+.side .backcolor { background: #00c8ff; }
+
+.side .sidenav { margin-top: 105px; }
+
+.side .sidenav li { width: 34px; }
+
+.side .sidenav li:nth-child(1) { position: relative; }
+
+.side .sidenav li:nth-child(1) i { display: inline-block; background: url(../img/imgindex/sidebarico.png) no-repeat; width: 36px; height: 30px; }
+
+.side .sidenav li:nth-child(1) div { position: absolute; left: -95px; top: 1px; background: #6c6c6c; color: #fff; width: 95px; height: 32px; text-align: center; line-height: 32px; z-index: 105; display: inline-block; display: none; }
+
+.side .sidenav li:nth-child(1) div a { color: #fff; font-size: 10px; padding: 0 9px; }
+
+.side .sidenav li:nth-child(2) { height: 150px; margin-top: 48px; }
+
+.side .sidenav li:nth-child(2) .sidecarlist { position: absolute; width: 300px; height: 100%; left: -300px; top: 0; bottom: 0; background: #fff; z-index: 105; display: none; }
+
+.side .sidenav li:nth-child(2) .sidecarlist p { color: #ccc; }
+
+.side .sidenav li:nth-child(2) .sidecarlist .mycar { font-size: 17px; color: #000; border-bottom: 1px dashed #ccc; padding: 10px; }
+
+.side .sidenav li:nth-child(2) .sidecarlist .mycar span { margin-left: 180px; cursor: pointer; font-size: 20px; color: #666; }
+
+.side .sidenav li:nth-child(2) .sidecarlist img { margin: 90px; }
+
+.side .sidenav li:nth-child(2) .sidecarlist .emptycar { font-size: 30px; margin: -75px 0 0 99px; }
+
+.side .sidenav li:nth-child(2) .sidecarlist .love { font-size: 18px; margin-left: 75px; }
+
+.side .sidenav li:nth-child(2) a { width: 34px; }
+
+.side .sidenav li:nth-child(2) a i { margin-top: 18px; background: url(../img/imgindex/sidebarico.png) no-repeat 0 -32px; width: 35px; height: 35px; display: inline-block; }
+
+.side .sidenav li:nth-child(2) a .car { width: 20px; display: inline-block; position: absolute; left: 12px; color: #fff; font-size: 13px; }
+
+.side .sidenav li:nth-child(2) a .count { background: url(../img/imgindex/sidebarico.png) no-repeat 0 -210px; display: inline-block; width: 35px; height: 35px; margin-top: 48px; font-size: 10px; color: #fff; text-align: center; line-height: 32px; }
+
+.side .sidenav li:nth-child(3) { position: relative; margin-top: 20px; }
+
+.side .sidenav li:nth-child(3) i { background: url(../img/imgindex/sidebarico.png) no-repeat 0 -61px; width: 35px; height: 35px; display: inline-block; }
+
+.side .sidenav li:nth-child(3) span { position: absolute; left: -100px; z-index: 105; top: 5px; width: 90px; background: #6c6c6c; height: 30px; text-align: center; line-height: 30px; color: #fff; font-size: 15px; padding: 0 5px; display: inline-block; }
+
+.side .sidenav li:nth-child(4) { position: relative; }
+
+.side .sidenav li:nth-child(4) i { display: inline-block; background: url(../img/imgindex/sidebarico.png) no-repeat 0 -100px; width: 35px; height: 35px; }
+
+.side .sidenav li:nth-child(4) span { position: absolute; left: -100px; z-index: 105; top: 1px; width: 90px; background: #6c6c6c; height: 30px; text-align: center; line-height: 30px; color: #fff; font-size: 15px; padding: 0 5px; display: inline-block; }
+
+.side .sidenav li:nth-child(5) { position: relative; }
+
+.side .sidenav li:nth-child(5) i { display: inline-block; background: url(../img/imgindex/sidebarico.png) no-repeat 0 -134px; width: 35px; height: 35px; margin-top: 50px; bottom: 150px; }
+
+.side .sidenav li:nth-child(5) .zhiwocode { bottom: 1px; z-index: 110; width: 410px; height: 170px; left: -410px; background: #6c6c6c; position: absolute; display: none; }
+
+.side .sidenav li:nth-child(5) .zhiwocode div { float: left; margin: 35px 0 0 26px; }
+
+.side .sidenav li:nth-child(5) .zhiwocode div img { width: 100px; height: 100px; display: inline-block; }
+
+.side .sidenav li:nth-child(5) .zhiwocode div p { font-size: 8px; color: #fff; margin-top: 8px; }
+
+.side .sidenav li:nth-child(6) { position: relative; }
+
+.side .sidenav li:nth-child(6) i { display: inline-block; background: url(../img/imgindex/sidebarico.png) no-repeat 0 -178px; width: 35px; height: 35px; margin-top: 20px; }
+
+.side .sidenav li:nth-child(6) span { position: absolute; left: -100px; z-index: 108; bottom: 12px; width: 90px; background: #6c6c6c; height: 30px; text-align: center; line-height: 30px; color: #fff; font-size: 15px; padding: 0 5px; display: inline-block; }
+
+.side .sidenav li:nth-child(7) { position: relative; }
+
+.side .sidenav li:nth-child(7) i { display: inline-block; position: absolute; left: 12px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #fff; bottom: -40px; }
+
+.side .sidenav li:nth-child(7) span { color: #fff; font-size: 12px; position: absolute; bottom: -55px; left: 5px; }
+
 .headernav .wrap { max-width: 1100px; height: 30px; line-height: 30px; font-size: 13px; }
 
 .headernav .wrap .header-left li { float: left; margin-left: 30px; }
@@ -163,11 +239,11 @@ main .wrap { max-width: 1100px; }
 
 main .wrap .maincontent { display: -webkit-flex; padding-top: 20px; width: 100%; -webkit-box-flex: 2; }
 
-main .wrap .maincontent ul { flex: 1; width: 60%; }
+main .wrap .maincontent ul { flex: 1; width: 50%; }
 
 main .wrap .maincontent ul li { margin-bottom: 20px; }
 
-main .wrap .maincontent .contents { flex: 1; width: 40%; }
+main .wrap .maincontent .contents { flex: 1; width: 35%; }
 
 main .wrap .maincontent .contents > div { height: 350px; background: #fff; margin-bottom: 24px; }
 
@@ -198,13 +274,13 @@ main-center
 
 .main-center .wrap .introduce { width: 100%; display: -webkit-flex; overflow: hidden; }
 
-.main-center .wrap .introduce li { background: #fff; width: 25%; margin-right: 53px; box-sizing: border-box; }
+.main-center .wrap .introduce li { background: #fff; width: 21%; margin-right: 53px; box-sizing: border-box; }
 
 .main-center .wrap .introduce li a { font-size: 12px; }
 
 .main-center .wrap .introduce li:nth-child(2) div { margin-top: 7px; }
 
-.main-center .wrap img { width: 260px; height: 260px; }
+.main-center .wrap img { width: 231px; height: 260px; }
 
 .main-center .wrap div { margin-top: 29px; }
 
@@ -231,13 +307,13 @@ brandlist
 
 .brandlist .wrap .brandleader { display: -webkit-flex; -webkit-box-flex: 2; border-top: 1px solid #000; margin-top: 8px; }
 
-.brandlist .wrap .brandleader .brandleader-left { width: 75%; margin-top: 20px; }
+.brandlist .wrap .brandleader .brandleader-left { width: 77%; margin-top: 20px; }
 
-.brandlist .wrap .brandleader .brandleader-left a { width: 20%; margin-right: 10px; }
+.brandlist .wrap .brandleader .brandleader-left a { width: 15%; margin-right: 10px; }
 
-.brandlist .wrap .brandleader .brandleader-left img { margin-top: 20px; width: 160px; height: 102px; }
+.brandlist .wrap .brandleader .brandleader-left img { margin-top: 20px; width: 150px; height: 102px; }
 
-.brandlist .wrap .brandleader .brandleader-right { width: 25%; margin-top: 18px; position: relative; }
+.brandlist .wrap .brandleader .brandleader-right { width: 20%; margin-top: 18px; position: relative; }
 
 .brandlist .wrap .brandleader .brandleader-right img { height: 230px; }
 

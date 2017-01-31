@@ -61,6 +61,8 @@ main .loginhtml table input { outline: none; text-indent: 7px; }
 
 main .loginhtml table input:focus { border: 2px solid #00c8ff; }
 
+main .loginhtml table tr span { color: red; font-size: 8px; display: none; }
+
 main .loginhtml table tr:nth-child(1) { line-height: 50px; font-size: 25px; }
 
 main .loginhtml table tr:nth-child(1) a { font-size: 16px; color: #00c8ff; }
