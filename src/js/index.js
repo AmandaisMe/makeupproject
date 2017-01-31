@@ -22,9 +22,10 @@ $(function(){
 		$('body').animate({scrollTop:scrollTop});
     })
 
+
     //栏目side
     $sidenavli=$('.sidenav').find('li');
-    $sidecarspan=$('.mycar');
+    
 
     $sidenavli.on('mouseleave',function(){
     	$sidenavli.find('div').fadeOut();
@@ -38,16 +39,32 @@ $(function(){
 
     $sidenavli.on('click',function(){
     	$this=$(this).index();
-    	$sidenavli.eq($this).find('section').fadeIn();
+    	$sidenavli.eq($this).find('section').show();
 
     })
-    $sidecarspan.on('click','span',function(){
-    	$('.sidecarlist').hide();
+    // $sidecarspan.on('click','span',function(){
+    // 	$('.sidecarlist').hide();
+    // })
+
+    $sidecarspan=$('.mycar').find('span');
+    $sidecarspan.on('click',function(){
+    	$('.sidecarlist').fadeOut();
     })
 
+    //submenu nav
+    $headerrightli=$('.header-right').children('li');
 
+    $headerrightli.on('mouseenter',function(){
 
+    	$sunbindex=$(this).index();
+    	// $headerrightli.eq($sunbindex).addClass('backgroundcolor').siblings('$headerrightli').hide();
+    	$headerrightli.eq($sunbindex).find('.submenu').slideDown().siblings('.submenu').slideUp();
+    	// $headerrightli.eq($sunbindex).find('span').rotate('45');
 
+    }).on('mouseleave',function(){
+    	$headerrightli.eq($sunbindex).find('.submenu').slideUp();
+
+    })
 
 
 	//header
