@@ -581,7 +581,9 @@ nav .mainnav {
     }
     .mainnav-right {
        position:absolute;
-       margin-left: 200px;
+       margin-left: 240px;
+       height: 30px;
+    overflow: hidden;
         li {
             width:8%;
             float: left;
@@ -618,4 +620,108 @@ nav .mainnav {
         height: 21px;
         display: inline-block;
     }
+}
+/*
+main
+ */
+.tuijian{
+	background:#eee;
+	padding-top:50px;
+	width:100%;
+
+	.wrap{
+		max-width:1100px;
+		p{
+		font-size:20px;
+		}
+		.tuijianlist{
+		width:100%;
+		height: 128px;
+		display:-webkit-flex;
+		background:#fff;
+		margin:40px 0 40px 0;
+		 div{
+		 display: inline-block;
+		 
+		 width:25%;
+		 
+		 	div{
+		 	width:98px;
+		 	height:98px;
+		 	}
+			 img{
+			 width:98px;
+			 height:98px;
+			 }
+			 a{
+			 font-size:10px;
+			 }
+		 }
+		}
+
+		.navgoods{
+		margin-top:10px;
+		background:#fff;
+		width:100%;
+			.detailintro{
+				font-weight:bold;
+				line-height:30px;
+				border-bottom:1px solid #ccc;
+				padding-bottom:5px;
+				display:-webkit-flex;
+				#detailintro_left{
+				    margin: 8px 0 0 50px;
+				width:90%;
+					strong{
+					padding:0 20px;
+					}
+					span{
+					color:red;
+					font-size:12px;
+					}
+				}
+				#detailintro_right{
+				width:10%;
+				}
+			}
+			.classify{
+				ul{
+				display:-webkit-flex;
+				-webkit-box-flex:3;
+				width:100%;
+				 padding: 13px 44px;
+					li{
+						&:nth-child(1){
+						    width: 9%;
+	    					font-size: 15px;
+	    					
+						}
+						&:nth-child(2){
+						width:80%;
+						}
+						&:nth-child(3){
+						width:10%;
+						}
+						a{
+						    margin: 0 55px 10px 0;
+    						font-size: 12px;
+    						color:#6c6c6c;
+    						
+    						text-align:center;
+    						display:inline-block;
+
+						}
+					}
+					#deploy{
+						 span{
+						 background:url(../img/detail/pb_subnav_icodown.png) right no-repeat ;
+						
+						width: 44px;
+    					display: inline-block;
+					 	}
+					}
+				}
+			}
+		}
+	}
 }

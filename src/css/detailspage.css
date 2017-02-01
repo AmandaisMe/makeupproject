@@ -186,7 +186,7 @@ nav .mainnav .mainnav-left:nth-child(1) li:hover .submenulist { display: -webkit
 
 nav .mainnav .mainnav-left .shop { background: url(../img/imgindex/topnav.png) 0 -67px; width: 5px; height: 40px; float: right; margin-left: 3px; cursor: pointer; position: absolute; }
 
-nav .mainnav .mainnav-right { position: absolute; margin-left: 200px; }
+nav .mainnav .mainnav-right { position: absolute; margin-left: 240px; height: 30px; overflow: hidden; }
 
 nav .mainnav .mainnav-right li { width: 8%; float: left; line-height: 35px; }
 
@@ -199,3 +199,44 @@ nav .mainnav .mainnav-right li span { color: #fff; }
 .mainnav-right li:nth-child(3) a { background: url(../img/imgindex/assure.png) no-repeat 0 -111px; width: 21px; height: 21px; display: inline-block; }
 
 .mainnav-right li:nth-child(4) a { background: url(../img/imgindex/assure.png) no-repeat 0 -77px; width: 21px; height: 21px; display: inline-block; }
+
+/* main */
+.tuijian { background: #eee; padding-top: 50px; width: 100%; }
+
+.tuijian .wrap { max-width: 1100px; }
+
+.tuijian .wrap p { font-size: 20px; }
+
+.tuijian .wrap .tuijianlist { width: 100%; height: 128px; display: -webkit-flex; background: #fff; margin: 40px 0 40px 0; }
+
+.tuijian .wrap .tuijianlist div { display: inline-block; width: 25%; }
+
+.tuijian .wrap .tuijianlist div div { width: 98px; height: 98px; }
+
+.tuijian .wrap .tuijianlist div img { width: 98px; height: 98px; }
+
+.tuijian .wrap .tuijianlist div a { font-size: 10px; }
+
+.tuijian .wrap .navgoods { margin-top: 10px; background: #fff; width: 100%; }
+
+.tuijian .wrap .navgoods .detailintro { font-weight: bold; line-height: 30px; border-bottom: 1px solid #ccc; padding-bottom: 5px; display: -webkit-flex; }
+
+.tuijian .wrap .navgoods .detailintro #detailintro_left { margin: 8px 0 0 50px; width: 90%; }
+
+.tuijian .wrap .navgoods .detailintro #detailintro_left strong { padding: 0 20px; }
+
+.tuijian .wrap .navgoods .detailintro #detailintro_left span { color: red; font-size: 12px; }
+
+.tuijian .wrap .navgoods .detailintro #detailintro_right { width: 10%; }
+
+.tuijian .wrap .navgoods .classify ul { display: -webkit-flex; -webkit-box-flex: 3; width: 100%; padding: 13px 44px; }
+
+.tuijian .wrap .navgoods .classify ul li:nth-child(1) { width: 9%; font-size: 15px; }
+
+.tuijian .wrap .navgoods .classify ul li:nth-child(2) { width: 80%; }
+
+.tuijian .wrap .navgoods .classify ul li:nth-child(3) { width: 10%; }
+
+.tuijian .wrap .navgoods .classify ul li a { margin: 0 55px 10px 0; font-size: 12px; color: #6c6c6c; text-align: center; display: inline-block; }
+
+.tuijian .wrap .navgoods .classify ul #deploy span { background: url(../img/detail/pb_subnav_icodown.png) right no-repeat; width: 44px; display: inline-block; }
