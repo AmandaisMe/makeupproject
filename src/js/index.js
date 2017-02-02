@@ -163,7 +163,7 @@ $(function(){
 		$index=$(this).index();
 		$move.eq($index).show(300,function(){
 
-		$move.eq($index).css('width','100px').animate({'left':100});
+		$move.eq($index).css('width','100px').animate({'left':'-100px'});
 		})
 		// .on('mouseleave',function(){
 		// // $move.addClass('mainnav-right');	

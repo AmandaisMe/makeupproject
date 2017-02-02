@@ -21,7 +21,7 @@ header
 */
 header { width: 100%; overflow: hidden; position: relative; }
 
-header #bigbanner { background: url(../img/imgindex/2aa.jpg) no-repeat center top; width: 100%; height: 300px; position: absolute; display: inline-block; top: 0; opacity: 0; z-index: 100; }
+header #bigbanner { background: url(../img/imgindex/2aa.jpg) no-repeat center top; width: 100%; height: 300px; position: absolute; display: inline-block; top: 0; opacity: 0; }
 
 header #minbanner { background: url(../img/imgindex/2bb.jpg) no-repeat center top; width: 100%; height: 100px; display: block; z-index: 99; top: 0; opacity: 1; z-index: 99; }
 
@@ -186,7 +186,7 @@ nav .mainnav .mainnav-left:nth-child(1) li:hover .submenulist { display: -webkit
 
 nav .mainnav .mainnav-left .shop { background: url(../img/imgindex/topnav.png) 0 -67px; width: 5px; height: 40px; float: right; margin-left: 3px; cursor: pointer; position: absolute; }
 
-nav .mainnav .mainnav-right { position: absolute; margin-left: 200px; }
+nav .mainnav .mainnav-right { position: absolute; margin-left: 200px; height: 35px; overflow: hidden; }
 
 nav .mainnav .mainnav-right li { width: 8%; float: left; line-height: 35px; }
 

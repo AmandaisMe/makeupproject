@@ -27,7 +27,7 @@ header {
         display:inline-block;
         top: 0;
         opacity:0;
-        z-index:100;
+       
         
 
         
@@ -578,8 +578,10 @@ nav .mainnav {
         }
     }
     .mainnav-right {
-       position:absolute;
-       margin-left: 200px;
+           position: absolute;
+            margin-left: 200px;
+            height: 35px;
+            overflow: hidden;
         li {
             width:8%;
             float: left;

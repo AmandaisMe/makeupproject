@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* main  */
+/*
+reset
+*/
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li, ol, pre, form, input, textarea, th, td, img, header, select { margin: 0; padding: 0; }
+
+body { font-family: "微软雅黑"; }
+
+a { text-decoration: none; color: #000; font-family: "微软雅黑"; }
+
+ul li { list-style: none; }
+
+.wrap { width: 100%; margin: 0 auto; }
+
+.clear::after { content: ''; display: block; clear: both; }
+
+.head { margin: 0 auto; }
+
+main .produces { background: #fff; }
+
+main .produces div { margin-left: 30px; line-height: 40px; }
+
+main .produces div:nth-child(1) { font-size: 14px; line-height: 30px; }
+
+main .produces div:nth-child(1) a { font-weight: bold; }
+
+main .produces div:nth-child(1) strong { margin: 0 10px 0 10px; }
+
+main .produces div:nth-child(1) span { color: red; }
+
+main .produces div:nth-child(2) { display: -webkit-flex; -webkit-box-flex: 2; }
+
+main .produces div:nth-child(2) p { font-size: 18px; line-height: 40px; }
+
+main .produces div:nth-child(2) strong { color: red; }
+
+main .produces div:nth-child(2) div { width: 62%; margin-right: 135px; }
+
+main .produces div:nth-child(2) a { width: 40%; }
