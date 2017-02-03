@@ -4,15 +4,17 @@ main
 @import 'reset.scss';
 
 main {
+	padding-top:10px;
 	.produces{
-	
 	background:#fff;
+	
 		div{
 		margin-left:30px;
 		line-height:40px;
+		display:inline-block;
 			&:nth-child(1){
 			font-size:14px;
-		
+			
 			line-height:30px;
 				a{
 				font-weight:bold;
@@ -25,24 +27,74 @@ main {
 			 	}
 			}
 			&:nth-child(2){
-
-			display:-webkit-flex;
-			-webkit-box-flex:2;
-			p{
-			font-size:18px;
-			line-height:40px;
-			}
-				strong{
-				color:red;
+				i{
+				    background: url(../img/detail/xingji.png) no-repeat 0 -20px;
+				    height: 14px;
+				    display: inline-block;
+				    width: 72px;
 				}
-				div{
-				    width: 62%;
-    				margin-right: 135px;
+				.num{
+				width:100px;
+				border:1px solid #ccc;
+
+				}
+				input{
+				width:50px;
+				border:none;
+				text-align:center;
 				}
 				a{
-				width:40%;
+				color:#00c8ff;
+				margin-left:20px;
+				font-size:10px;
+				}
+				.shoucang{
+				
+					i{
+					 background: url(../img/detail/xingji.png) no-repeat 0 -78px;
+					 display: inline-block;
+					 height: 36px;
+					}
+					strong{
+					    background: #ff643c;
+					    width: 196px;
+					    height: 48px;
+					    display: inline-block;
+					    color: #fff;
+					    font-size: 20px;
+					}
+					a{
+					    margin-left: 43px;
+						i{
+						    background: url(../img/detail/xingji.png) no-repeat 0 -58px;
+						    display: inline-block;
+						    height: 16px;
+						    width: 22px;
+						}
+					}
+
+				}
+				.virtue{
+				font-size:12px;
+					span{
+					margin-right:10px;
+						&:nth-child(1){
+						background: #00c8ff;
+					    color: #fff;
+					    width: 35px;
+					    display: inline-block;
+					    height: 20px;
+					    text-align: center;
+					    line-height: 20px;
+						}
+						big{
+						margin:0 10px 0 10px;
+						}
+					}
+
 				}
 			}
+			
 		}
 	}
 }

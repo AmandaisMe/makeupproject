@@ -5,7 +5,7 @@ reset
 */
 body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li, ol, pre, form, input, textarea, th, td, img, header, select { margin: 0; padding: 0; }
 
-body { font-family: "微软雅黑"; }
+body { font-family: "微软雅黑"; background: none; }
 
 a { text-decoration: none; color: #000; font-family: "微软雅黑"; }
 
@@ -17,9 +17,11 @@ ul li { list-style: none; }
 
 .head { margin: 0 auto; }
 
+main { padding-top: 10px; }
+
 main .produces { background: #fff; }
 
-main .produces div { margin-left: 30px; line-height: 40px; }
+main .produces div { margin-left: 30px; line-height: 40px; display: inline-block; }
 
 main .produces div:nth-child(1) { font-size: 14px; line-height: 30px; }
 
@@ -29,12 +31,26 @@ main .produces div:nth-child(1) strong { margin: 0 10px 0 10px; }
 
 main .produces div:nth-child(1) span { color: red; }
 
-main .produces div:nth-child(2) { display: -webkit-flex; -webkit-box-flex: 2; }
+main .produces div:nth-child(2) i { background: url(../img/detail/xingji.png) no-repeat 0 -20px; height: 14px; display: inline-block; width: 72px; }
 
-main .produces div:nth-child(2) p { font-size: 18px; line-height: 40px; }
+main .produces div:nth-child(2) .num { width: 100px; border: 1px solid #ccc; }
 
-main .produces div:nth-child(2) strong { color: red; }
+main .produces div:nth-child(2) input { width: 50px; border: none; text-align: center; }
 
-main .produces div:nth-child(2) div { width: 62%; margin-right: 135px; }
+main .produces div:nth-child(2) a { color: #00c8ff; margin-left: 20px; font-size: 10px; }
 
-main .produces div:nth-child(2) a { width: 40%; }
+main .produces div:nth-child(2) .shoucang i { background: url(../img/detail/xingji.png) no-repeat 0 -78px; display: inline-block; height: 36px; }
+
+main .produces div:nth-child(2) .shoucang strong { background: #ff643c; width: 196px; height: 48px; display: inline-block; color: #fff; font-size: 20px; }
+
+main .produces div:nth-child(2) .shoucang a { margin-left: 43px; }
+
+main .produces div:nth-child(2) .shoucang a i { background: url(../img/detail/xingji.png) no-repeat 0 -58px; display: inline-block; height: 16px; width: 22px; }
+
+main .produces div:nth-child(2) .virtue { font-size: 12px; }
+
+main .produces div:nth-child(2) .virtue span { margin-right: 10px; }
+
+main .produces div:nth-child(2) .virtue span:nth-child(1) { background: #00c8ff; color: #fff; width: 35px; display: inline-block; height: 20px; text-align: center; line-height: 20px; }
+
+main .produces div:nth-child(2) .virtue span big { margin: 0 10px 0 10px; }

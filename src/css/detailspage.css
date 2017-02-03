@@ -4,7 +4,7 @@ reset
 */
 body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li, ol, pre, form, input, textarea, th, td, img, header, select { margin: 0; padding: 0; }
 
-body { font-family: "微软雅黑"; }
+body { font-family: "微软雅黑"; background: none; }
 
 a { text-decoration: none; color: #000; font-family: "微软雅黑"; }
 
