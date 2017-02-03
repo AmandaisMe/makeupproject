@@ -17,40 +17,114 @@ ul li { list-style: none; }
 
 .head { margin: 0 auto; }
 
-main { padding-top: 10px; }
+.picintro { padding: 10px 0 30px 0; }
 
-main .produces { background: #fff; }
+.picintro .produces { background: #fff; }
 
-main .produces div { margin-left: 30px; line-height: 40px; display: inline-block; }
+.picintro .produces .first-child { border-bottom: 1px solid #eee; }
 
-main .produces div:nth-child(1) { font-size: 14px; line-height: 30px; }
+.picintro .produces div { margin-left: 30px; line-height: 40px; }
 
-main .produces div:nth-child(1) a { font-weight: bold; }
+.picintro .produces div:nth-child(2) p { margin-top: 20px; }
 
-main .produces div:nth-child(1) strong { margin: 0 10px 0 10px; }
+.picintro .produces div:nth-child(2) p:nth-child(2) { border-bottom: 1px solid #eee; }
 
-main .produces div:nth-child(1) span { color: red; }
+.picintro .produces div:nth-child(2) p:nth-child(2) strong { font-size: 30px; color: #ff643c; margin-right: 15px; }
 
-main .produces div:nth-child(2) i { background: url(../img/detail/xingji.png) no-repeat 0 -20px; height: 14px; display: inline-block; width: 72px; }
+.picintro .produces div:nth-child(2) p:nth-child(2) span { font-size: 14px; color: #c4c4c4; }
 
-main .produces div:nth-child(2) .num { width: 100px; border: 1px solid #ccc; }
+.picintro .produces div:nth-child(2) p:nth-child(3) { border-bottom: 1px solid #eee; }
 
-main .produces div:nth-child(2) input { width: 50px; border: none; text-align: center; }
+.picintro .produces div:nth-child(2) p:nth-child(3) a { color: #666; }
 
-main .produces div:nth-child(2) a { color: #00c8ff; margin-left: 20px; font-size: 10px; }
+.picintro .produces div:nth-child(1) { font-size: 14px; line-height: 30px; }
 
-main .produces div:nth-child(2) .shoucang i { background: url(../img/detail/xingji.png) no-repeat 0 -78px; display: inline-block; height: 36px; }
+.picintro .produces div:nth-child(1) a { font-weight: bold; }
 
-main .produces div:nth-child(2) .shoucang strong { background: #ff643c; width: 196px; height: 48px; display: inline-block; color: #fff; font-size: 20px; }
+.picintro .produces div:nth-child(1) strong { margin: 0 10px 0 10px; }
 
-main .produces div:nth-child(2) .shoucang a { margin-left: 43px; }
+.picintro .produces div:nth-child(1) span { color: red; }
 
-main .produces div:nth-child(2) .shoucang a i { background: url(../img/detail/xingji.png) no-repeat 0 -58px; display: inline-block; height: 16px; width: 22px; }
+.picintro .produces div:nth-child(2) div { display: inline-block; width: 400px; }
 
-main .produces div:nth-child(2) .virtue { font-size: 12px; }
+.picintro .produces div:nth-child(2) i { margin-left: 10px; background: url(../img/detail/xingji.png) no-repeat 0 -20px; height: 14px; display: inline-block; width: 72px; }
 
-main .produces div:nth-child(2) .virtue span { margin-right: 10px; }
+.picintro .produces div:nth-child(2) .num { width: 100px; border: 1px solid #ccc; }
 
-main .produces div:nth-child(2) .virtue span:nth-child(1) { background: #00c8ff; color: #fff; width: 35px; display: inline-block; height: 20px; text-align: center; line-height: 20px; }
+.picintro .produces div:nth-child(2) input { width: 50px; border: none; text-align: center; }
 
-main .produces div:nth-child(2) .virtue span big { margin: 0 10px 0 10px; }
+.picintro .produces div:nth-child(2) a { color: #00c8ff; margin-left: 20px; font-size: 10px; }
+
+.picintro .produces div:nth-child(2) .shoucang i { background: url(../img/detail/xingji.png) no-repeat 0 -78px; display: inline-block; height: 36px; }
+
+.picintro .produces div:nth-child(2) .shoucang strong { background: #ff643c; width: 196px; height: 48px; display: inline-block; color: #fff; font-size: 20px; }
+
+.picintro .produces div:nth-child(2) .shoucang a { margin-left: 43px; }
+
+.picintro .produces div:nth-child(2) .shoucang a i { background: url(../img/detail/xingji.png) no-repeat 0 -58px; display: inline-block; height: 16px; width: 22px; }
+
+.picintro .produces div:nth-child(2) .virtue { font-size: 12px; }
+
+.picintro .produces div:nth-child(2) .virtue span { margin-right: 10px; }
+
+.picintro .produces div:nth-child(2) .virtue span:nth-child(1) { background: #00c8ff; color: #fff; width: 35px; display: inline-block; height: 20px; text-align: center; line-height: 20px; }
+
+.picintro .produces div:nth-child(2) .virtue span big { margin: 0 10px 0 10px; }
+
+.hot .introbrand { background: #fff; padding: 0 0 50px 0; }
+
+.hot .introbrand > div:nth-child(1) { border-bottom: 1px solid #eee; }
+
+.hot .introbrand > div:nth-child(1) strong { font-size: 18px; margin: 0 15px 0 15px; line-height: 50px; }
+
+.hot .introbrand > div:nth-child(1) a { font-size: 15px; color: #00c8ff; margin: 0 15px 0 15px; line-height: 50px; }
+
+.hot .introbrand > div:nth-child(2) h4 { margin: 10px 0 0 20px; border-bottom: 1px solid #666; }
+
+.hot .introbrand > div:nth-child(2) h4 span { display: inline-block; width: 74px; height: 30px; background: #00c8ff; line-height: 30px; color: #fff; font-size: 15px; text-align: center; }
+
+.hot .introbrand > div div { margin-left: 20px; }
+
+.hot .introbrand > div div div { display: inline-block; width: 98px; }
+
+.hot .introbrand > div div div img { width: 98px; height: 98px; }
+
+.hot .introbrand > div div div p { font-size: 12px; }
+
+.hot .introbrand > div div div span { color: red; }
+
+.hot .introbrand > div div div:nth-child(2), .hot .introbrand > div div div:nth-child(4), .hot .introbrand > div div div:nth-child(6) { width: 50px; }
+
+.hot .introbrand > div div div:nth-child(2) i, .hot .introbrand > div div div:nth-child(4) i, .hot .introbrand > div div div:nth-child(6) i { display: inline-block; background: url(../img/detail/detailadd.png) no-repeat; width: 32px; height: 107px; }
+
+.hot .introbrand > div div div:nth-child(8) { width: 50px; }
+
+.hot .introbrand > div div div:nth-child(8) i { display: inline-block; background: url(../img/detail/detailequal.png) no-repeat; width: 70px; height: 107px; }
+
+.hot .introbrand > div div div:nth-child(9) { line-height: 30px; width: 150px; }
+
+.hot .introbrand > div div div:nth-child(9) p:nth-child(1) { font-size: 16px; font-weight: bold; }
+
+.hot .introbrand > div div div:nth-child(9) strong { display: inline-block; font-size: 12px; color: #fff; width: 120px; background: #ff643c; text-align: center; }
+
+.samebrand .samebrandsale > p { font-size: 20px; line-height: 60px; }
+
+.samebrand .samebrandsale ul { display: -webkit-flex; }
+
+.samebrand .samebrandsale ul li { margin-right: 20px; }
+
+.samebrand .samebrandsale ul li:nth-child(1) .price-bottom { margin-top: 0px; }
+
+.samebrand .samebrandsale ul li div { display: inline-block; width: 225px; height: 325px; background: #fff; padding: 10px; }
+
+.samebrand .samebrandsale ul li div img { width: 215px; height: 225px; }
+
+.samebrand .samebrandsale ul li div a { font-size: 10px; }
+
+.samebrand .samebrandsale ul li div span { font-size: 20px; color: #ff643c; }
+
+.samebrand .samebrandsale ul li div del { font-size: 12px; color: #666; }
+
+.samebrand .samebrandsale ul li div strong { display: inline-block; margin-left: 20px; width: 80px; background: #ff643c; color: #fff; font-size: 12px; text-align: center; line-height: 30px; height: 30px; }
+
+.samebrand .samebrandsale ul li div .price-bottom { margin-top: 20px; }

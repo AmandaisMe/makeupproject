@@ -3,15 +3,45 @@ main
  */
 @import 'reset.scss';
 
-main {
-	padding-top:10px;
+.picintro {
+	padding:10px 0 30px 0;
 	.produces{
 	background:#fff;
-	
+	.first-child{
+			border-bottom:1px solid #eee;
+
+	}
+
 		div{
+		
 		margin-left:30px;
 		line-height:40px;
-		display:inline-block;
+		
+			&:nth-child(2){
+				p{
+				margin-top:20px;
+						&:nth-child(2){
+						border-bottom:1px solid #eee;
+							strong{
+								font-size: 30px;
+							    color: #ff643c;
+							    margin-right: 15px;
+							}
+							span{
+							font-size:14px;
+							color:#c4c4c4;
+							}
+						}
+						&:nth-child(3){
+						border-bottom:1px solid #eee;
+
+							a{
+							color:#666;
+							}
+						}
+				}
+			}
+		
 			&:nth-child(1){
 			font-size:14px;
 			
@@ -27,7 +57,14 @@ main {
 			 	}
 			}
 			&:nth-child(2){
+
+				div{
+				display:inline-block;
+				width:400px;
+				
+				}
 				i{
+					margin-left:10px;
 				    background: url(../img/detail/xingji.png) no-repeat 0 -20px;
 				    height: 14px;
 				    display: inline-block;
@@ -73,6 +110,7 @@ main {
 						}
 					}
 
+
 				}
 				.virtue{
 				font-size:12px;
@@ -96,5 +134,163 @@ main {
 			}
 			
 		}
+	}
+}
+.hot{
+	
+	.introbrand{
+	    background: #fff;
+    	padding: 0 0 50px 0;
+		>div{
+			&:nth-child(1){
+			
+			border-bottom:1px solid #eee;
+			strong{
+			font-size:18px;
+			margin:0 15px 0 15px;
+			line-height:50px;
+			}
+			a{
+			font-size:15px;
+			color:#00c8ff;
+			margin:0 15px 0 15px;
+			line-height:50px;
+			}
+		}
+		&:nth-child(2){
+
+			h4{
+			margin: 10px 0 0 20px;
+			 border-bottom:1px solid #666;
+				span{
+				display:inline-block;
+					width: 74px;
+				    height: 30px;
+				    background: #00c8ff;
+				    line-height: 30px;
+				    color: #fff;
+				    font-size: 15px;
+				    text-align: center;
+				    
+					}
+			   
+				}
+			}
+			div{
+			margin-left:20px;
+				div{
+				display:inline-block;
+				width:98px;
+					img{
+					width:98px;
+					height:98px;
+					}
+					p{
+					font-size:12px;
+					}
+					span{
+					color:red;
+					}
+					&:nth-child(2),&:nth-child(4),&:nth-child(6){
+						width:50px;
+							i{
+						    display: inline-block;
+						    background: url(../img/detail/detailadd.png) no-repeat;
+						    width: 32px;
+						    height: 107px;
+							}
+						
+					}
+					&:nth-child(8){
+					width:50px;
+						i{
+						    display: inline-block;
+						    background: url(../img/detail/detailequal.png) no-repeat;
+						    width: 70px;
+						    height: 107px;
+						}
+					}
+					&:nth-child(9){
+					p{
+						&:nth-child(1){
+						font-size:16px;
+						font-weight:bold;
+						}
+					}
+					line-height:30px;
+					width:150px;
+						strong{
+						display:inline-block;
+						font-size:12px;
+						color:#fff;
+						width: 120px;
+						background:#ff643c;
+						text-align:center;
+
+						}
+					}
+				}	
+			}
+		}
+	}
+
+}
+.samebrand{
+	.samebrandsale{
+
+		>p{
+			font-size:20px;
+			line-height:60px;
+		}
+		ul{
+		display:-webkit-flex;
+			li{
+			margin-right:20px;
+			&:nth-child(1){
+				.price-bottom{
+	 		margin-top:0px;
+	 		}
+			}
+				div{
+			 	display:inline-block;
+			 	width:225px;
+			 	height:325px;
+			 	background:#fff;
+			 	padding:10px;
+	 
+
+	 		img{
+	 		width:215px;
+	 		height:225px;
+	 		}
+	 		a{
+	 		font-size:10px;
+	 		}
+	 		span{
+	 		 font-size: 20px;
+    		color: #ff643c;
+	 		}
+	 		del{
+	 		font-size:12px;
+	 		color:#666;
+	 		}
+	 		strong{
+	 		display:inline-block;
+	 		margin-left:20px;
+	 		width:80px;
+	 		background:#ff643c;
+	 		color:#fff;
+	 		font-size:12px;
+	 		text-align:center;
+	 		line-height:30px;
+	 		height:30px;
+	 		}
+	 		.price-bottom{
+	 		margin-top:20px;
+	 		}
+	 	}
+			}
+		}
+	 	
 	}
 }
