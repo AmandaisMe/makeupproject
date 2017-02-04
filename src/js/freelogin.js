@@ -35,6 +35,7 @@ $(function(){
 		
 	
 	$(':button').click(function(){
+		console.log(1);
 
 				$.post('php/freelogin.php',{
 					phone:$('[name=phone]').val(),
@@ -44,14 +45,33 @@ $(function(){
 				}, function(response){
 					
 					var $obj = eval('(' + response + ')');
+					console.log($obj);
 
 					if($obj.state){
 						window.location.href='index.html';
 					} else {
 
 						alert($obj.message);
-						location.reload();
+						// location.reload();
 					}
 				})				
+	})
+
+	function random(){
+		var randomnub=document.getElementsByClassName('random')[0];
+		var arr='abcdefghijklmnopqrst123456';
+		var str=arr.length;
+		var res='';
+		for(i=0;i<4;i++){
+			randomnum=parseInt(Math.random()*str);
+			res+=arr[randomnum];
+			randomnub.innerHTML=res;
+		}
+		 
+
+		}
+	random();
+	$('.change').click(function(){
+		random();
 	})
 })

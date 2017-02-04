@@ -85,18 +85,7 @@ $(function(){
 
 	});
 
-	// .toggle(
-	// 	function(){
-	// 	$big.css({opacity:1}).show();
-	// 	$small.show().css({opacity:0,'position':'absolute'});
-	// 	$('.picitem').find("img").attr('src','img/imgindex/unfold.jpg');
-	// 	}
-	// )
-	// $img.on('click',function(){
-	// 	$(this).parent().find('a').toggle();
-	// 	$(this).parent().find("a").fadeToggle();
-	// 	$(this).parent().find('a').slideDown();
-	// })
+	
 
 	
 
@@ -109,9 +98,7 @@ $(function(){
 		
 	});
 
-	//轮播图
-	// $('.banner').find('ul').gdscarousel({width:'100%',height:'300px',page:'center',
-	// 	});
+	
 	
 
   //brandlist
@@ -128,27 +115,7 @@ $(function(){
 
 	});
 	
-	//producelist
-	// 	$img=$('.producelist').find('a');
-	// 	$prod=$('.functionone');
-		
-	// $img.on('mouseenter',function(){
-	// 	$index=$(this).index();
-	// 	$prod.eq($index).show().siblings().find('.functionone').hide();
-		
-	// }).on('mouseleave',function(){
-	// 	$prod.hide();
-	// });
-
-	// $sub=$('.submenu');
 	
-	// $min=$('.header-right').children().find('span');
-	
-	// $min.on('mouseenter',function(){
-	// 	$index=$(this).index();
-	// 	$sub.eq($index).slideDown(200);
-	
-	// })
 	
 	
 	$sea=$('.seas');
@@ -172,8 +139,8 @@ $(function(){
 		
 		
 	});
-
-
+//轮播图
+	
 });
 
 

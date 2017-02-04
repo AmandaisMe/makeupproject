@@ -203,13 +203,13 @@ nav .mainnav .mainnav-right li span { color: #fff; }
 /*
 banner
 */
-.banner { width: 100%; }
+.banner { width: 100%; height: 260px; overflow: hidden; position: relative; }
 
-.banner ul { width: 100%; height: 250px; overflow: hidden; position: relative; }
+.banner ul { position: absolute; top: 0; left: 0; height: 260px; }
 
-.banner ul li { float: left; position: absolute; }
+.banner ul li { float: left; }
 
-.banner img { width: 100%; }
+.banner img { display: block; width: 100%; }
 
 /*
 main

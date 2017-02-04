@@ -6,7 +6,9 @@
 	<link rel="stylesheet" href="css/freelogin.css">
 	<script src='js/jquery-3.1.1.js'></script>
 	<script src='js/index.js'></script>
+	
 	<script src='js/freelogin.js'></script>
+
 
 
 </head>
@@ -18,7 +20,7 @@
 	                欢迎来到知我！这里，用专业呵护美丽。
 	            </li>
 	            <li><a href="login.html">请登录</a></li>
-	            <li><a href="">快速注册</a></li>
+	            <li><a href="freelogin.html">快速注册</a></li>
 	        </ul>
 	        <ul class="header-right ">
 	            <li>
@@ -60,7 +62,7 @@
 <nav>
     <div class="wrap clear">
         <h1>
-            <img src="img/imgindex/logo.jpg" alt="">
+            <a href="index.html"><img src="img/imgindex/logo.jpg" alt=""></a>
         </h1>
         <div class="pic">
         	
@@ -103,14 +105,17 @@
 	        		</tr>
 	        		
 	        		<tr>
-	        			<td >
-	        			<input type="text" placeholder='请输入验证码' name='identifyingcode'required=''>
-	        			<br/><span>验证码有误,请重新输入</span>
-	        			</td>
-	        			<td></td>
-	        			<td><img src="img/imgindex/verifycode (1).png" alt=""></td>
-	        			<td><a href="">换一张</a></td>
-	        		</tr>
+                                <td>
+                                    <input type="text" placeholder='请输入验证码' name='identifyingcode'>
+                                    <br/><span>验证码错误</span>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <!-- <img src="img/imgindex/verifycode.png" alt=""> -->
+                                    <i class="random"></i>
+                                </td>
+                                <td class='change'>换一张</td>
+                            </tr>
 	        	
 					
 					<tr>

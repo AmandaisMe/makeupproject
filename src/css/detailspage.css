@@ -164,6 +164,8 @@ nav .mainnav .mainnav-left { width: 50%; cursor: pointer; }
 
 nav .mainnav .mainnav-left li { width: 20%; float: left; line-height: 35px; text-align: center; }
 
+nav .mainnav .mainnav-left li:first-child { background: none; }
+
 nav .mainnav .mainnav-left li a { color: #fff; }
 
 nav .mainnav .mainnav-left li:not(:last-child):hover, nav .mainnav .mainnav-left li .active { background: #00647f; }
@@ -201,7 +203,7 @@ nav .mainnav .mainnav-right li span { color: #fff; }
 .mainnav-right li:nth-child(4) a { background: url(../img/imgindex/assure.png) no-repeat 0 -77px; width: 21px; height: 21px; display: inline-block; }
 
 /* main */
-.tuijian { background: #eee; width: 100%; }
+.tuijian { background: #eee; margin-top: 20px; width: 100%; }
 
 .tuijian .wrap { max-width: 1100px; }
 
@@ -286,6 +288,26 @@ nav .mainnav .mainnav-right li span { color: #fff; }
 .tuijian .wrap .navgoods .searchnav .peopleprices .page-right li { margin: 0 10px 0 10px; }
 
 .tuijian .wrap .navgoods .searchnav .peopleprices .page-right li span { color: red; }
+
+.tuijian .wrap .navgoods .searchnav .pagediv span { color: red; font-size: 15px; width: 46px; display: inline-block; text-align: center; border: 1px solid #000; cursor: pointer; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist { height: 800px; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist .boxli { position: absolute; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li { float: left; background: #fff; margin: 10px 17px 0 0; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li li { width: 250px; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li p { font-size: 14px; padding: 5px; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li strong { background: #ff643c; color: #fff; width: 87px; display: inline-block; height: 23px; text-align: center; margin-left: 34px; font-size: 12px; line-height: 23px; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li del { color: #ccc; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li big { font-size: 18px; color: #ff643c; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist li img { width: 254px; height: 260px; }
 
 /*footer*/
 .search { padding: 20px 0 20px 0; }

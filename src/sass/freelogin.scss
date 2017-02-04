@@ -160,6 +160,26 @@ main{
                     width:330px;
                     }
                 }
+                &:nth-child(5){
+                 line-height:60px;
+                 a{
+                 color:#00c8ff;
+                 }
+                 .change{
+                cursor:pointer;
+                }
+                
+                td{
+
+                &:nth-child(3){
+                    width: 51px;
+                    border: 1px solid #666;
+                    text-align: center;
+                    height: 24px;
+                   
+                    }
+                }
+                }
                 &:nth-child(6){
                     input{
                     -webkit-appearance: none;
@@ -173,8 +193,6 @@ main{
                     }
             
                  }
-
-
             }
        }
       

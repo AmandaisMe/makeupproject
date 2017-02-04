@@ -121,6 +121,7 @@ main{
          }
         }
        tr{
+
        span{
        color:red;
        font-size:8px;
@@ -156,6 +157,21 @@ main{
          a{
          color:#00c8ff;
          }
+         .change{
+        cursor:pointer;
+        }
+        
+        td{
+
+        &:nth-child(3){
+            width: 51px;
+            border: 1px solid #666;
+            text-align: center;
+            height: 24px;
+           
+            }
+        }
+        
         input{
         height:30px;
         font-size:16px;
@@ -180,7 +196,7 @@ main{
             
         }
        }
-      
+
         }
         .hezuo {
             border-top: 1px dashed #000;

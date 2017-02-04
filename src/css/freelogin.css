@@ -79,6 +79,14 @@ main .loginhtml table tr:nth-child(3) input { width: 330px; }
 
 main .loginhtml table tr:nth-child(4) input { width: 330px; }
 
+main .loginhtml table tr:nth-child(5) { line-height: 60px; }
+
+main .loginhtml table tr:nth-child(5) a { color: #00c8ff; }
+
+main .loginhtml table tr:nth-child(5) .change { cursor: pointer; }
+
+main .loginhtml table tr:nth-child(5) td:nth-child(3) { width: 51px; border: 1px solid #666; text-align: center; height: 24px; }
+
 main .loginhtml table tr:nth-child(6) input { -webkit-appearance: none; line-height: 31px; text-align: center; background: #00c8ff; width: 403px; font-size: 18px; color: #fff; border: none; }
 
 main .hezuo { border-top: 1px dashed #000; padding-top: 17px; margin-top: 20px; color: #6c6c6c; }

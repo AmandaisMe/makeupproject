@@ -18,32 +18,19 @@
     }
     
     //执行查询数据方法
-    function query($sql){
-        //初始化连接
-        $conn = connect();
-        //执行 sql 脚本，也叫数据库脚本，返回一个结果集（对象）
-        $result = mysqli_query($conn,$sql);
-        //定义了一个数组
-        $jsonData = array();           
-        if ($result)
-        {
-            //在结果集中获取对象(逐行获取)
-            while ($obj = mysqli_fetch_object($result))
-            {
-                //$jsonData.push($obj)
-                $jsonData[] = $obj;
-            }   
-            //将对象转换成 json 格式的字符并打印出来
-            //JSON.stringify()            
-            // if(!$isCheck){
-            //     echo json_encode($jsonData, JSON_UNESCAPED_UNICODE);
-            // }
-            // 释放结果集
+   function query($sql){
+        $conn=connect();
+        $result=mysqli_query($conn,$sql);
+        if($result){
+            $dataArray=array();
+            while($obj=mysqli_fetch_object($result)){
+                $dataArray[]=$obj;
+            }
+            
             mysqli_free_result($result);
-        } 
-        //关闭连接
-        mysqli_close($conn);   
-        return $jsonData;
+        }
+        mysqli_close($conn);
+        return $dataArray;
     }
 
     //执行逻辑语句

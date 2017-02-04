@@ -75,6 +75,10 @@ main .loginhtml table tr:nth-child(7) { line-height: 60px; }
 
 main .loginhtml table tr:nth-child(7) a { color: #00c8ff; }
 
+main .loginhtml table tr:nth-child(7) .change { cursor: pointer; }
+
+main .loginhtml table tr:nth-child(7) td:nth-child(3) { width: 51px; border: 1px solid #666; text-align: center; height: 24px; }
+
 main .loginhtml table tr:nth-child(7) input { height: 30px; font-size: 16px; color: #6c6c6c; }
 
 main .loginhtml table tr:nth-child(8) { font-size: 12px; line-height: 40px; }

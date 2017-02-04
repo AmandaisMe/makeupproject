@@ -517,6 +517,9 @@ nav .mainnav {
             float: left;
             line-height: 35px;
             text-align: center;
+            &:first-child{
+            background:none;
+            }
             a {
                 color: #fff;
             }
@@ -626,7 +629,7 @@ main
  */
 .tuijian{
 	background:#eee;
-	
+	margin-top:20px;
 	width:100%;
 
 	.wrap{
@@ -852,6 +855,66 @@ main
 						
 					}
 				}
+                .pagediv{
+               
+                
+                span{
+                     color: red;
+                        font-size: 15px;
+                        width: 46px;
+                        display: inline-block;
+                        text-align: center;
+                        border: 1px solid #000;
+                        cursor:pointer;
+                 } 
+                }
+                .produceslist{
+                height:800px;
+                .boxli{
+                       position:absolute;
+                       }
+
+                 
+                    li{
+                       float:left;
+                        background: #fff;
+                       
+                      
+                       margin: 10px 17px 0 0;
+                       li{
+                       width:250px;
+
+                       }
+
+                        p{
+                        font-size:14px;
+                        padding:5px;
+                        }
+                        strong{
+                       background: #ff643c;
+                        color: #fff;
+                        width: 87px;
+                        display: inline-block;
+                        height: 23px;
+                        text-align: center;
+                        margin-left: 34px;
+                        font-size: 12px;
+                        line-height: 23px;
+                        }
+                        del{
+                        color:#ccc;
+                        }
+                        big{
+                        font-size:18px;
+                        color:#ff643c;
+                        }
+                        img{
+                        width: 254px;
+                        height:260px;
+                        }
+
+                    }
+                }
 			}
 		}
 	}
