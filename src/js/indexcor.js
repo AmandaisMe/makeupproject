@@ -34,6 +34,9 @@ window.onload=function(){
 
 		},30)
 
-	},3000)
+	},3000);
+
+
+
 
 }

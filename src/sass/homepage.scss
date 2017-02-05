@@ -468,6 +468,7 @@ nav {
     border: 2px solid #eee;
     margin-top: 10px;
     cursor: pointer;
+
     a {
         &:nth-child(1) {
             background: url(../img/imgindex/topnav.png) no-repeat 10px -206px;
@@ -483,11 +484,13 @@ nav {
             cursor: pointer;
             float: right;
         }
-    }
-    span {
-        display: inline-block;
+        &:nth-child(2){
         margin-top: 11px;
+        display: inline-block;
+            color: #666;
+        }
     }
+
 }
 
 .listdata {
@@ -645,6 +648,7 @@ banner
     img {
         display: block;
         width:100%;
+        height:260px;
     }
 }
 
@@ -794,10 +798,12 @@ main-center
             display: -webkit-flex;
             overflow: hidden;
             li {
-                background: #fff;
-                width: 21%;
-                margin-right: 53px;
-                box-sizing: border-box;
+                   background: #fff;
+                    width: 23%;
+                    margin-right: 53px;
+                    box-sizing: border-box;
+                    padding: 10px;
+                    
                 a {
                     font-size: 12px;
                 }
@@ -831,6 +837,7 @@ main-center
                 line-height: 40px;
                 color: #fff;
                 font-size: 15px;
+                cursor:pointer;
             }
         }
     }

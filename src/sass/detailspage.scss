@@ -855,37 +855,39 @@ main
 						
 					}
 				}
-                .pagediv{
-               
                 
+                .pagediv{
+                    text-align:center;
+               
                 span{
-                     color: red;
-                        font-size: 15px;
+                    color: red;
+                      font-size: 15px;
                         width: 46px;
                         display: inline-block;
                         text-align: center;
                         border: 1px solid #000;
                         cursor:pointer;
                  } 
+                  .spancolor{
+                background:red;
+                color:#000;
+                }
                 }
                 .produceslist{
                 height:800px;
+                position:relative;
                 .boxli{
                        position:absolute;
                        }
-
-                 
                     li{
                        float:left;
-                        background: #fff;
-                       
-                      
+                       background:#eee;
                        margin: 10px 17px 0 0;
                        li{
                        width:250px;
-
+                       background:#fff;
+                           height: 350px;
                        }
-
                         p{
                         font-size:14px;
                         padding:5px;
@@ -909,7 +911,7 @@ main
                         color:#ff643c;
                         }
                         img{
-                        width: 254px;
+                        width: 249px;
                         height:260px;
                         }
 

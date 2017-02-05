@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*
+reset
+*/
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, li, ol, pre, form, input, textarea, th, td, img, header, select { margin: 0; padding: 0; }
+
+body { font-family: "微软雅黑"; background: none; }
+
+a { text-decoration: none; color: #000; font-family: "微软雅黑"; }
+
+ul li { list-style: none; }
+
+.wrap { width: 100%; margin: 0 auto; }
+
+.clear::after { content: ''; display: block; clear: both; }
+
+.head { margin: 0 auto; }
+
+/* header */
+body { background: #eee; }
+
+.headernav { background: #eee; width: 100%; display: -webkit-flex; justify-content: space-between; position: relative; }
+
+.headernav .wrap { max-width: 1100px; height: 30px; line-height: 30px; font-size: 13px; }
+
+.headernav .wrap .header-left li { float: left; margin-left: 30px; }
+
+.headernav .wrap .header-right { float: right; }
+
+.headernav .wrap .header-right > li { float: left; margin-left: 29px; position: relative; width: 72px; text-align: center; z-index: 101; }
+
+.headernav .wrap .header-right > li:nth-child(4) { width: 10px; }
+
+.headernav .wrap .submenu { background: #fff; display: none; z-index: 1; width: 72px; }
+
+.headernav .wrap .backgroundcolor { background: #fff; border: 1px solid #666; }
+
+.headernav .wrap li:hover .code img { display: block; }
+
+.headernav .wrap .minpico, .headernav .wrap .minpicf, .headernav .wrap .minpicth { display: inline-block; background: url(../img/imgindex/topnav.png) 0 -73px; width: 5px; height: 40px; float: right; margin-left: 2px; cursor: pointer; }
+
+.headernav .wrap .code img { width: 100px; height: 100px; position: absolute; top: 30px; left: -10px; display: none; z-index: 1; }
+
+.headernav .wrap .minpict { display: inline-block; background: url(../img/imgindex/topnav.png) no-repeat 0 -4px; width: 12px; height: 24px; float: left; }
+
+.headernav .wrap .header-right > span { float: left; margin-left: 24px; }
+
+.logo { width: 100%; height: 116px; background: #fff; }
+
+.logo .wrap { max-width: 1100px; }
+
+.logo .wrap div { display: -webkit-flex; -webkit-box-flex: 2; }
+
+.logo .wrap div h1 { width: 40%; }
+
+.logo .wrap div ul { display: -webkit-flex; line-height: 116px; }
+
+.logo .wrap div ul li:nth-child(1) { position: relative; }
+
+.logo .wrap div ul li:nth-child(1) span { color: #fff; text-align: center; line-height: 40px; background: url(../img/detail/liucheng_bg.png) no-repeat 0 -35px; width: 40px; height: 40px; display: inline-block; }
+
+.logo .wrap div ul li:nth-child(1) i { background: #00c8ff; width: 92px; height: 10px; position: absolute; top: 51px; left: 33px; }

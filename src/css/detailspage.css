@@ -289,15 +289,19 @@ nav .mainnav .mainnav-right li span { color: #fff; }
 
 .tuijian .wrap .navgoods .searchnav .peopleprices .page-right li span { color: red; }
 
+.tuijian .wrap .navgoods .searchnav .pagediv { text-align: center; }
+
 .tuijian .wrap .navgoods .searchnav .pagediv span { color: red; font-size: 15px; width: 46px; display: inline-block; text-align: center; border: 1px solid #000; cursor: pointer; }
 
-.tuijian .wrap .navgoods .searchnav .produceslist { height: 800px; }
+.tuijian .wrap .navgoods .searchnav .pagediv .spancolor { background: red; color: #000; }
+
+.tuijian .wrap .navgoods .searchnav .produceslist { height: 800px; position: relative; }
 
 .tuijian .wrap .navgoods .searchnav .produceslist .boxli { position: absolute; }
 
-.tuijian .wrap .navgoods .searchnav .produceslist li { float: left; background: #fff; margin: 10px 17px 0 0; }
+.tuijian .wrap .navgoods .searchnav .produceslist li { float: left; background: #eee; margin: 10px 17px 0 0; }
 
-.tuijian .wrap .navgoods .searchnav .produceslist li li { width: 250px; }
+.tuijian .wrap .navgoods .searchnav .produceslist li li { width: 250px; background: #fff; height: 350px; }
 
 .tuijian .wrap .navgoods .searchnav .produceslist li p { font-size: 14px; padding: 5px; }
 
@@ -307,7 +311,7 @@ nav .mainnav .mainnav-right li span { color: #fff; }
 
 .tuijian .wrap .navgoods .searchnav .produceslist li big { font-size: 18px; color: #ff643c; }
 
-.tuijian .wrap .navgoods .searchnav .produceslist li img { width: 254px; height: 260px; }
+.tuijian .wrap .navgoods .searchnav .produceslist li img { width: 249px; height: 260px; }
 
 /*footer*/
 .search { padding: 20px 0 20px 0; }
