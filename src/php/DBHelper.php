@@ -21,16 +21,17 @@
    function query($sql){
         $conn=connect();
         $result=mysqli_query($conn,$sql);
+
         if($result){
             $dataArray=array();
             while($obj=mysqli_fetch_object($result)){
                 $dataArray[]=$obj;
             }
-            
+            echo json_encode($dataArray,JSON_UNESCAPED_UNICODE);
             mysqli_free_result($result);
         }
         mysqli_close($conn);
-        return $dataArray;
+        // return $dataArray;
     }
 
     //执行逻辑语句

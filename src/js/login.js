@@ -53,13 +53,14 @@ $(function() {
             phone: username,
             password: pass
         }, function(response) {
-            console.log(response);
-            if (response.length > 3) {
+           console.log(response)
+            if (response.length>3) {
                 window.location.href = 'index.html';
+                console.log(1)
             } else {
                 alert('密码或用户名错误');
             }
-
+ 
         })
     })
 

@@ -4,4 +4,5 @@
 	$password=$_POST["password"];
 	$sql="SELECT * from login where phone='$username' and password='$password'";
 	query($sql);
+	// echo $username;
 ?>

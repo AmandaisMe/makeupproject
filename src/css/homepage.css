@@ -276,7 +276,7 @@ main-center
 
 .main-center .wrap .introduce { width: 100%; display: -webkit-flex; overflow: hidden; }
 
-.main-center .wrap .introduce li { background: #fff; width: 23%; margin-right: 53px; box-sizing: border-box; padding: 10px; }
+.main-center .wrap .introduce li { background: #fff; width: 22%; margin-right: 40px; box-sizing: border-box; padding: 5px; }
 
 .main-center .wrap .introduce li a { font-size: 12px; }
 

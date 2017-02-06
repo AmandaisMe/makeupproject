@@ -51,6 +51,19 @@ $(function(){
     	$('.sidecarlist').fadeOut();
     })
 
+    $sidecarlist=$('.sidecarlist');
+    $sidecount=$('.count').html();
+    
+    if($sidecount>0){
+    	console.log(1)
+
+    }
+
+    	
+
+
+
+
     //submenu nav
     $headerrightli=$('.header-right').children('li');
 
@@ -116,7 +129,7 @@ $(function(){
 	});
 	
 	
-	
+	//nav
 	
 	$sea=$('.seas');
 	$sea.on('mouseenter',function(){
@@ -139,7 +152,7 @@ $(function(){
 		
 		
 	});
-//轮播图
+
 	
 });
 

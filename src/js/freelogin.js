@@ -43,17 +43,22 @@ $(function(){
 					confirm: $('[name=confirmpassword]').val(),
 
 				}, function(response){
-					
-					var $obj = eval('(' + response + ')');
-					console.log($obj);
+					console.log(response.length)
+					if(response.length==3){
+							window.location.href='index.html';
+						}else{
+							alert('已被注册');
+						}
+					// var $obj = eval('(' + response + ')');
+					// console.log($obj);
 
-					if($obj.state){
-						window.location.href='index.html';
-					} else {
+					// if($obj.state){
+					// 	window.location.href='index.html';
+					// } else {
 
-						alert($obj.message);
-						// location.reload();
-					}
+					// 	alert($obj.message);
+					// 	location.reload();
+					// }
 				})				
 	})
 

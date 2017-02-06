@@ -5,16 +5,18 @@
 	$confirm = $_POST["confirm"];
 
 	//判断当前 email 是否已存在数据表中
-	$phoneCheck ="select * from login where phone='$phoneNumber'" ;
+	$phoneCheck ="select * from login where phone='$phoneNumber'and password='$password'" ;
 	$result = query($phoneCheck);
 	//当前 email 不存在，执行插入操作
-	if(count($result) > 0){
+	echo $result;
+	if(count($result)==0){
+
 		$sql = "insert into login(phone, password, confirm) values('$phoneNumber', '$password', '$confirm')";
 		// echo $sql;
 		$excute = excute($sql);
 
 		if($excute){
-			echo "{state: true}";
+			
 		} else {
 			echo "{state: false, message: '插入失败！！！'}";
 		}
