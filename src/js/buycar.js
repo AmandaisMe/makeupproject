@@ -1,5 +1,6 @@
 
 $(function(){
+	
 	//购物车
 	$goodslist=$('.goodslist');
 	var goods;
@@ -24,21 +25,34 @@ $(function(){
 			
 
 			$('<li/>').addClass('goodsmessage').html('<div>'+'<a>'+'<img src='+goods[i].imgurl+'>'+'</a>'+'<span class="title">'+goods[i].title+'</span>'+'</div>'
-			+'<div>'+'<span>'+goods[i].price+'</span>'+'<span>'+goods[i].qty+'</span >'+'<span class="total">'+goods[i].price*goods[i].qty+'</span>'+'<span>'+'<strong>'+'删除'+
+			+'<div>'+'<span>'+goods[i].price+'</span>'+'<i class="less">'+"-"+'</i>'+'<input class="num" type="text" value='+goods[i].qty+'>'+'<em class="add">'+"+"+'</em>'+'</span >'+'<span class="total">'+goods[i].price*goods[i].qty+'</span>'+'<span>'+'<strong>'+'删除'+
 			'</strong>'+'<big>'+'收藏'+'</big>'+'</div>').appendTo($('.goodslists'));
 			
 			
 			sum+=goods[i].price*goods[i].qty;
 			pricenum+=goods[i].qty;
+			
 
-		
 		}
 
 		$('.cleardiv').find('strong').html(sum);
 		$('.cleardiv').find('big').html(pricenum);
+
+
+		// $('.less').on('click',function(){
+		// 		$('.num').val($('.num').val()-1);
+				
+		// 	});
+		// $('.add').on('click',function(){
+
+		// 		// $('.num').val(parseInt($('.num').val()+1));
+
+		// })
+		
+	}	
 		
 		
-	}
+
 		$('.allclear').on('click',function(){
 				$('.goodslists').remove();
 

@@ -83,7 +83,7 @@ main .wrap .checkgoods .goodslist .goodslists li div:nth-child(1) { width: 50%; 
 
 main .wrap .checkgoods .goodslist .goodslists li div:nth-child(2) { width: 50%; }
 
-main .wrap .checkgoods .goodslist .goodslists li div:nth-child(2) span { margin-right: 100px; line-height: 100px; }
+main .wrap .checkgoods .goodslist .goodslists li div:nth-child(2) span { margin: 50px 100px 0 0; }
 
 main .wrap .checkgoods .goodslist .goodslists li div:nth-child(2) big { margin: 0 10px 0 10px; cursor: pointer; }
 
@@ -93,8 +93,76 @@ main .wrap .checkgoods .goodslist .goodslists li span { font-size: 13px; color: 
 
 main .wrap .checkgoods .goodslist .goodslists li strong { cursor: pointer; }
 
-main .wrap .checkgoods .cleardiv { margin: 20px 0 20px 0; display: -webkit-flex; width: 100%; font-size: 13px; cursor: pointer; }
+main .wrap .checkgoods .goodslist .goodslists .add, main .wrap .checkgoods .goodslist .goodslists .less { font-style: normal; margin: 8px; cursor: pointer; }
 
-main .wrap .checkgoods .cleardiv span { margin-right: 20px; }
+main .wrap .checkgoods .goodslist .goodslists .num { width: 20px; }
 
-main .wrap .checkgoods .cleardiv p { margin-left: 260px; }
+main .wrap .cleardiv { margin: 20px 0 20px 0; display: -webkit-flex; width: 100%; font-size: 13px; cursor: pointer; }
+
+main .wrap .cleardiv span { margin-right: 20px; }
+
+main .wrap .cleardiv p { margin-left: 260px; }
+
+/*introduce*/
+.main-center { width: 100%; }
+
+.main-center .wrap { max-width: 1100px; position: relative; overflow: hidden; }
+
+.main-center .wrap p { padding-bottom: 20px; }
+
+.main-center .wrap .prev, .main-center .wrap .next { cursor: pointer; font-size: 30px; color: #fff; position: absolute; width: 35px; background: #666; height: 38px; line-height: 38px; text-align: center; z-index: 1; }
+
+.main-center .wrap .prev { top: 190px; }
+
+.main-center .wrap .next { top: 190px; left: 1032px; }
+
+.main-center .wrap .introduce { width: 100%; display: -webkit-flex; position: relative; }
+
+.main-center .wrap .introduce li { background: #fff; width: 22%; margin-right: 35px; box-sizing: border-box; padding: 5px; }
+
+.main-center .wrap .introduce li a { font-size: 12px; }
+
+.main-center .wrap .introduce li:nth-child(2) div { margin-top: 7px; }
+
+.main-center .wrap img { width: 231px; height: 260px; }
+
+.main-center .wrap div { margin-top: 29px; }
+
+.main-center .wrap div .price big { font-size: 30px; color: #ff643c; }
+
+.main-center .wrap div .price del { color: #6c6c6c; }
+
+.main-center .wrap div .carlist { float: right; width: 40%; height: 37px; background: #ff643c; border-radius: 4px; text-align: center; line-height: 40px; color: #fff; font-size: 15px; cursor: pointer; }
+
+/*footer*/
+footer { width: 100%; background: #fff; margin-top: 70px; height: 200px; }
+
+footer .wrap { max-width: 1100px; }
+
+footer .wrap .foot ul { display: -webkit-flex; -webkit-box-flex: 8; width: 100%; margin-left: 70px; }
+
+footer .wrap .foot ul li { width: 71.5px; margin-top: 38px; margin-right: 50px; }
+
+footer .wrap .foot ul li a { color: #6c6c6c; font-size: 14px; }
+
+footer .wrap .foot ul li span { line-height: 40px; font-weight: bold; }
+
+footer .wrap .foot ul li img { width: 103px; height: 103px; }
+
+footer .wrap .foot ul li i { color: #00c8ff; font-weight: bold; font-size: 8px; }
+
+footer .wrap .foot ul #phone, footer .wrap .foot ul #last { width: 100px; }
+
+.footer { width: 100%; background: #00c8ff; height: 37px; color: #fff; font-size: 14px; font-weight: bold; line-height: 37px; }
+
+.footer .wrap { max-width: 1100px; }
+
+.footer .wrap #bottom ul { width: 55%; margin-left: 274px; display: -webkit-flex; }
+
+.footer .wrap #bottom ul li { margin-right: 50px; }
+
+.bottom-nav { width: 100%; height: 200px; background: #fff; color: #6c6c6c; font-size: 12px; }
+
+.bottom-nav p { margin-bottom: 10px; }
+
+.bottom-nav .footer_copy { width: 50%; text-align: center; margin-left: 226px; }

@@ -663,7 +663,7 @@ main {
             -webkit-box-flex: 2;
             ul {
                 flex: 1;
-                    width: 50%;
+                width: 58.5%;
                 li {
                     margin-bottom: 20px;
                 }
@@ -681,18 +681,18 @@ main {
                         line-height: 50px;
                     }
                     #prointru {
-                        display: inline-block;
-                        width: 70%;
-                        margin-left: 127px;
-                        margin-top: 12px;
-                        letter-spacing: 2px;
-                        line-height: 26px;
+                            display: inline-block;
+                            width: 55%;
+                            margin-left: 116px;
+                            margin-top: 11px;
+                            line-height: 23px;
+                            font-size:14px;
                         strong {
                             color: #ff643c;
                         }
                     }
                     div {
-                        width: 92%;
+                        width: 78%;
                         margin-top: 30px;
                         text-align: center;
                         .price {
@@ -704,19 +704,20 @@ main {
                             }
                         }
                         p {
-                            margin-left: 350px;
-                            color: #c4c4c4;
+                                margin-left: 257px;
+                                color: #c4c4c4;
+                                font-size: 13px;
                         }
                         .carlist {
-                            float: right;
-                            width: 30%;
-                            height: 40px;
-                            background: #ff643c;
-                            border-radius: 4px;
-                            text-align: center;
-                            line-height: 40px;
-                            color: #fff;
-                            font-size: 20px;
+                                float: right;
+                                width: 27%;
+                                height: 40px;
+                                background: #ff643c;
+                                border-radius: 4px;
+                                text-align: center;
+                                line-height: 40px;
+                                color: #fff;
+                                font-size: 16px;
                         }
                     }
                 }

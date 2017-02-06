@@ -1,6 +1,6 @@
 
 $(function(){
-	$.post('php/session.php',function(data){
+	$.post('../php/session.php',function(data){
 		var $obj = eval('(' + data + ')');
 		console.log($obj)
 		if($obj.state){
@@ -102,12 +102,12 @@ $(function(){
 	$img.on('click',function(){
 		$big.css({opacity:1,'position': 'relative'}).show();
 		$small.hide().css({opacity:0});
-		$('.picitem').find("img").attr('src','img/imgindex/unfold.jpg').addClass('unfold').
+		$('.picitem').find("img").attr('src','../img/imgindex/unfold.jpg').addClass('unfold').
 		on('click',function(){
 		console.log(1)
 		$big.css({opacity:0}).hide();
 		$small.show().css({opacity:1});
-		$('.picitem').find("img").attr('src','img/imgindex/fold.jpg');
+		$('.picitem').find("img").attr('src','../img/imgindex/fold.jpg');
 		})
 
 
@@ -148,9 +148,9 @@ $(function(){
 	
 	$sea=$('.seas');
 	$sea.on('mouseenter',function(){
-		$sea.find('img').attr('src','img/imgindex/home_overseas_current.gif');
+		$sea.find('img').attr('src','../img/imgindex/home_overseas_current.gif');
 	}).on('mouseleave',function(){
-		$sea.find('img').attr('src','img/imgindex/home_overseas.gif');
+		$sea.find('img').attr('src','../img/imgindex/home_overseas.gif');
 	});
 
 	$move=$('#mainright').children();
@@ -196,7 +196,27 @@ $(function(){
 	$('.prev').on('click',function(){
 		$('.introduce').animate({'left':'0'},1000);
 
+	});
+	$('.introduce li').on('mouseenter',function(){
+
+		$this=$(this).index();
+		$('.introduce li').eq($this).find("img").css({opacity:0.7});
+
+	}).on('mouseleave',function(){
+
+		$('.introduce li').eq($this).find("img").css({opacity:1});
+
 	})
+	$('.maincontent').find('ul li').on('mouseenter',function(){
+		$this=$(this).index();
+		$('.maincontent').find('ul li').eq($this).css({opacity:0.7});
+
+	}).on('mouseleave',function(){
+		$('.maincontent').find('ul li').eq($this).css({opacity:1});
+
+	});
+
+
 });
 
 

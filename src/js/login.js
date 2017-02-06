@@ -49,7 +49,7 @@ $(function() {
         pass = _password.val();
         username = _username.val();
 
-        $.post('php/login.php', {
+        $.post('../php/login.php', {
             phone: username,
             password: pass
         }, function(res) {

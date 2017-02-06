@@ -240,7 +240,7 @@ main .wrap { max-width: 1100px; }
 
 main .wrap .maincontent { display: -webkit-flex; padding-top: 20px; width: 100%; -webkit-box-flex: 2; }
 
-main .wrap .maincontent ul { flex: 1; width: 50%; }
+main .wrap .maincontent ul { flex: 1; width: 58.5%; }
 
 main .wrap .maincontent ul li { margin-bottom: 20px; }
 
@@ -250,19 +250,19 @@ main .wrap .maincontent .contents > div { height: 350px; background: #fff; margi
 
 main .wrap .maincontent .contents > div .endtime { text-align: center; font-size: 14px; line-height: 50px; }
 
-main .wrap .maincontent .contents > div #prointru { display: inline-block; width: 70%; margin-left: 127px; margin-top: 12px; letter-spacing: 2px; line-height: 26px; }
+main .wrap .maincontent .contents > div #prointru { display: inline-block; width: 55%; margin-left: 116px; margin-top: 11px; line-height: 23px; font-size: 14px; }
 
 main .wrap .maincontent .contents > div #prointru strong { color: #ff643c; }
 
-main .wrap .maincontent .contents > div div { width: 92%; margin-top: 30px; text-align: center; }
+main .wrap .maincontent .contents > div div { width: 78%; margin-top: 30px; text-align: center; }
 
 main .wrap .maincontent .contents > div div .price big { font-size: 30px; }
 
 main .wrap .maincontent .contents > div div .price del { color: #6c6c6c; }
 
-main .wrap .maincontent .contents > div div p { margin-left: 350px; color: #c4c4c4; }
+main .wrap .maincontent .contents > div div p { margin-left: 257px; color: #c4c4c4; font-size: 13px; }
 
-main .wrap .maincontent .contents > div div .carlist { float: right; width: 30%; height: 40px; background: #ff643c; border-radius: 4px; text-align: center; line-height: 40px; color: #fff; font-size: 20px; }
+main .wrap .maincontent .contents > div div .carlist { float: right; width: 27%; height: 40px; background: #ff643c; border-radius: 4px; text-align: center; line-height: 40px; color: #fff; font-size: 16px; }
 
 /*
 main-center
