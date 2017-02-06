@@ -1,18 +1,8 @@
 @import 'reset.scss';
-
-
-
-
 //导航条
-
-
-
-
-
 /*
 header
 */
-
 header {
     width: 100%;
     
@@ -29,7 +19,6 @@ header {
         opacity:0;
        
         
-
         
     }
     #minbanner {
@@ -54,17 +43,14 @@ header {
         z-index: 102;
     }
 }
-
 .headernav {
     background: #eee;
     width: 100%;
     display: -webkit-flex;
     justify-content: space-between;
     position:relative;
-
     
 }
-
  .side{
    width: 34px;
     height: 100%;
@@ -80,7 +66,6 @@ header {
         margin-top:105px;
         li{
           width:34px;
-
             &:nth-child(1){
               position:relative;
                 i{  
@@ -88,7 +73,6 @@ header {
                     background:url(../img/imgindex/sidebarico.png) no-repeat ;
                     width:36px;
                     height:30px;
-
                     
                 }
                 div{
@@ -115,7 +99,6 @@ header {
             &:nth-child(2){
                  height:150px;
                  margin-top: 48px;
-
                 .sidecarlist{
                     position:absolute;
                     width:300px;
@@ -183,7 +166,6 @@ header {
                      text-align: center;
                      line-height: 32px;
                     }
-
                 }
             }
             &:nth-child(3){
@@ -210,7 +192,6 @@ header {
                     padding: 0 5px;
                   
                 display: inline-block;
-
                     
                  }
             }
@@ -222,7 +203,6 @@ header {
                     width:35px;
                     height:35px;
                     
-
                 }
                 span{
                     position: absolute;
@@ -239,7 +219,6 @@ header {
                     padding: 0 5px;
                    
                         display: inline-block;
-
                     
                 }
             }
@@ -264,7 +243,6 @@ header {
                         position:absolute;
                        display:none;
                         
-
                     div{
                         float:left;
                        
@@ -311,7 +289,6 @@ header {
             }
             &:nth-child(7){
             position:relative;
-
                 i{
                     display: inline-block;
                     position: absolute;
@@ -343,7 +320,6 @@ header {
     .header-left li {
         float: left;
         margin-left: 30px;
-
     }
     .header-right {
         float: right;
@@ -364,14 +340,11 @@ header {
         display: none;
         z-index: 1;
         width: 72px;
-
-
     }
     .backgroundcolor{
     background:#fff;
     border:1px solid #666;
     }
-
     li:hover .code img{
     display:block;
     }
@@ -408,12 +381,9 @@ header {
         margin-left: 24px;
     }
 }
-
-
 /*
 nav
 */
-
 nav {
     width: 100%;
     -webkit-box-flex: 3;
@@ -425,22 +395,15 @@ nav {
         }
     }
 }
-
-
-
-
-
  .nav-center {
     width: 60%;
     padding-top:20px;
 }
-
  .nav-center label input:nth-child(1) {
     border: 2px solid #00c8ff;
     width: 400px;
     height: 40px;
 }
-
  .nav-center label input:nth-child(2) {
     border: none;
     background: #00c8ff;
@@ -450,7 +413,6 @@ nav {
     color: #fff;
     font-size: 20px;
 }
-
 .nav-center-bottom {
     a {
         color: #6c6c6c;
@@ -460,7 +422,6 @@ nav {
         margin: 0 5px;
     }
 }
-
 .nav-right {
    
     width: 15%;
@@ -468,7 +429,6 @@ nav {
     border: 2px solid #eee;
     margin-top: 10px;
     cursor: pointer;
-
     a {
         &:nth-child(1) {
             background: url(../img/imgindex/topnav.png) no-repeat 10px -206px;
@@ -490,9 +450,7 @@ nav {
             color: #666;
         }
     }
-
 }
-
 .listdata {
     border: 2px solid #eee;
     width: 22%;
@@ -502,7 +460,6 @@ nav {
     bottom: 191px;
     display: none;
 }
-
 nav .mainnav {
     width: 100%;
     height: 35px;
@@ -571,7 +528,6 @@ nav .mainnav {
         .shop {
             background: url(../img/imgindex/topnav.png) 0 -67px;
      
-
             width: 5px;
             height: 40px;
             float: right;
@@ -595,7 +551,6 @@ nav .mainnav {
         }
     }
 }
-
 .mainnav-right li {
     &:nth-child(1) a {
         background: url(../img/imgindex/assure.png) no-repeat 0 -3px;
@@ -622,12 +577,9 @@ nav .mainnav {
         display: inline-block;
     }
 }
-
-
 /*
 banner
 */
-
 .banner {
    
     width: 100%;
@@ -639,10 +591,8 @@ banner
         top: 0;
         left: 0;
         height: 260px;
-
         li{
         float:left;
-
         }
     }
     img {
@@ -651,14 +601,9 @@ banner
         height:260px;
     }
 }
-
-
-
 /*
 main
-
 */
-
 main {
     width: 100%;
     background: #f6f6f3;
@@ -709,7 +654,6 @@ main {
             }
         }
     }
-
     .wrap {
         max-width: 1100px;
         .maincontent {
@@ -780,27 +724,49 @@ main {
         }
     }
 }
-
-
 /*
 main-center
 */
-
 .main-center {
     width: 100%;
+   
     .wrap {
         max-width: 1100px;
+         position:relative;
+          overflow: hidden;
         p {
             padding-bottom: 20px;
+        }
+        .prev,.next{
+        cursor:pointer;
+         font-size: 30px;
+        color: #fff;
+        position: absolute;
+        width: 35px;
+        background: #666;
+        height: 38px;
+        line-height: 38px;
+        text-align:center;
+        z-index: 1;
+        }
+        .prev{
+        top: 190px;
+    
+        }
+        .next{
+            top: 190px;
+            left: 1032px;
         }
         .introduce {
             width: 100%;
             display: -webkit-flex;
-            overflow: hidden;
+           
+            position:relative;
+
             li {
                    background: #fff;
                     width: 22%;
-                    margin-right: 40px;
+                    margin-right:35px;
                     box-sizing: border-box;
                   padding:5px;
                     
@@ -842,12 +808,9 @@ main-center
         }
     }
 }
-
-
 /*
 brandlist
 */
-
 .brandlist {
     width: 100%;
     padding-top: 40px;
@@ -899,47 +862,37 @@ brandlist
                 }
             }
             .brandleader-right{
-
-            	width:20%;
+                width:20%;
               margin-top:18px;
               position:relative;
               img{
               height:230px;
               }
-
               :first-child{
-              	          left: -65px;
-    						top: 131px;
-
+                          left: -65px;
+                            top: 131px;
               }
               :last-child{
                     top: -122px;
-    				left: 190px;
-
+                    left: 190px;
               }
             }
-
-
         }
         .parttwo,.partthree,.partfour{
-        	display:none;
+            display:none;
         }
     }
-
-
 }
 .producelist {
     width:100%;
     font-size:  13px;
     
    ul li{
-
        .pro-contents{
          display:-webkit-flex;
         width:100%;
         -webkit-box-flex:3;
         position:relative;
-
         &:after{
         margin-top:20px;
         width: 31%;
@@ -971,9 +924,7 @@ brandlist
         img{
         width:100%;
         height: 300px;
-
         }
-
         p{
         margin-top: 20px;
         line-height:25px;
@@ -991,7 +942,6 @@ brandlist
          margin-top: -25px;
          left:38px;
          display:none;
-
          span{
          border:1px solid #00c8ff;
          background:#fff;
@@ -1006,8 +956,6 @@ brandlist
             }
          
          }
-
-
         }
         .group{
          border-top:1px #c4c4c4 dotted;
@@ -1022,10 +970,8 @@ brandlist
             margin-top: -26px;
             left: 106px;
           
-
          
         }
-
         div {
             margin-top: 29px;
             .price {
@@ -1056,7 +1002,6 @@ brandlist
    }
     
     }
-
 .search{
     padding-top: 50px;
      padding-bottom: 50px;
@@ -1069,7 +1014,6 @@ brandlist
 }
 footer{
     width:100%;
-
     background:#fff;
     height:200px;
     .wrap{
@@ -1119,7 +1063,6 @@ footer{
    font-size:14px;
    font-weight:bold;
     line-height: 37px;
-
     .wrap{
     max-width:1100px;
     #bottom{
@@ -1132,7 +1075,6 @@ footer{
          margin-right: 50px;
          }
          }
-
      }
      
     

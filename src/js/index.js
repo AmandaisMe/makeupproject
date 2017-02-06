@@ -1,5 +1,20 @@
 
 $(function(){
+	$.post('php/session.php',function(data){
+		var $obj = eval('(' + data + ')');
+		console.log($obj)
+		if($obj.state){
+			$('.header-left li:gt(0)').remove();
+			console.log(1)
+			$('<li/>').html('欢迎您，知我用户:'+$obj.clientName+'<a href="#" class="loginout">退出</a>').appendTo('.header-left')
+		} 
+	})
+
+	// $('.loginout').on('click',function(){
+	// 		$.post("php/loginout.php",function(data){
+	// 			window.location.reload();
+	// 		})
+	// 	})
 
 	//导航条
    
@@ -99,7 +114,7 @@ $(function(){
 	});
 
 	
-
+	
 	
 
 
@@ -145,15 +160,43 @@ $(function(){
 
 		$move.eq($index).css('width','100px').animate({'left':'-100px'});
 		})
-		// .on('mouseleave',function(){
-		// // $move.addClass('mainnav-right');	
-		// $move.attr('id','mainright');
-		// })
-		
 		
 	});
 
+
+	//producelist
 	
+	
+	$('.pro-contents').children().on('mouseenter',function(){
+		// $this=$(this).index();
+		$('.functionone',$(this)).css({display:'block'});
+		$('.functionone',$(this)).prev().children().css({opacity:0.5})
+
+	}).on('mouseleave',function(){
+		$('.functionone',$(this)).css({display:'none'});
+		$('.functionone',$(this)).prev().children().css({opacity:1})
+	})
+
+
+	//introduce
+
+	$('.next').on('click',function(){
+		
+		$('.introduce').animate({'left':'-1100px'},1000);
+		$length=$('.introduce li').width()*$('.introduce li').length;
+
+		$left=$('.introduce').css('left').slice(0,-2);
+		console.log($left)
+		if($left<=-1100){
+			$('.introduce').animate({'left':"0"},1000);
+
+		}
+		
+	})
+	$('.prev').on('click',function(){
+		$('.introduce').animate({'left':'0'},1000);
+
+	})
 });
 
 

@@ -1,5 +1,6 @@
 $(function(){
 
+
 	$(':input').blur(function(){
 		_phone=$('[name=phone]');
 		_password=$('[name=password]');
@@ -35,8 +36,7 @@ $(function(){
 		
 	
 	$(':button').click(function(){
-		console.log(1);
-
+		console.log(1)
 				$.post('php/freelogin.php',{
 					phone:$('[name=phone]').val(),
 					password: $('[name=password]').val(),

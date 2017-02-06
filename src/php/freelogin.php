@@ -10,7 +10,6 @@
 	//当前 email 不存在，执行插入操作
 	echo $result;
 	if(count($result)==0){
-
 		$sql = "insert into login(phone, password, confirm) values('$phoneNumber', '$password', '$confirm')";
 		// echo $sql;
 		$excute = excute($sql);

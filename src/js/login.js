@@ -52,14 +52,27 @@ $(function() {
         $.post('php/login.php', {
             phone: username,
             password: pass
-        }, function(response) {
-           console.log(response)
-            if (response.length>3) {
+        }, function(res) {
+           console.log(res)
+            if (res.length>3) {
                 window.location.href = 'index.html';
                 console.log(1)
             } else {
                 alert('密码或用户名错误');
+                
             }
+            //  var $obj = eval('('+res+')');
+
+            // console.log($obj);
+
+            // if($obj.state){
+            //     console.log(1)
+            //     window.location.href='index.html';
+            // } else {
+
+            //     alert($obj.message);
+            //     location.reload();
+            // }
  
         })
     })

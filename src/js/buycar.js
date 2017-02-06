@@ -1,6 +1,6 @@
 
 $(function(){
-
+	//购物车
 	$goodslist=$('.goodslist');
 	var goods;
 	$cookies=document.cookie.split('; ');
@@ -23,22 +23,73 @@ $(function(){
 		for(var i=0;i<goods.length;i++){
 			
 
-			$('<li/>').addClass('goodsmessage').html('<div>'+'<a>'+'<img src='+goods[i].imgurl+'>'+'</a>'+'<span>'+goods[i].title+'</span>'+'</div>'
-			+'<div>'+'<span>'+goods[i].price+'</span>'+'<span>'+goods[i].qty+'</span>'+'<span>'+goods[i].price*goods[i].qty+'</span>'+'<span>'+'<big>'+'删除'+
-			'</big>'+'<big>'+'收藏'+'</big>'+'</div>').appendTo($('.goodslists'));
+			$('<li/>').addClass('goodsmessage').html('<div>'+'<a>'+'<img src='+goods[i].imgurl+'>'+'</a>'+'<span class="title">'+goods[i].title+'</span>'+'</div>'
+			+'<div>'+'<span>'+goods[i].price+'</span>'+'<span>'+goods[i].qty+'</span >'+'<span class="total">'+goods[i].price*goods[i].qty+'</span>'+'<span>'+'<strong>'+'删除'+
+			'</strong>'+'<big>'+'收藏'+'</big>'+'</div>').appendTo($('.goodslists'));
 			
 			
 			sum+=goods[i].price*goods[i].qty;
 			pricenum+=goods[i].qty;
+
 		
 		}
 
 		$('.cleardiv').find('strong').html(sum);
 		$('.cleardiv').find('big').html(pricenum);
-		$('.count').text(pricenum);
+		
 		
 	}
+		$('.allclear').on('click',function(){
+				$('.goodslists').remove();
+
+				var now=new Date();
+				now.setDate(now.getDate()-3);
+				document.cookie = 'goods=' + JSON.stringify(goods)+';expires='+now;
+					
+		});
+
+		$strong=$('.goodsmessage').find('strong');
+		$big=$('.goodsmessage').find('big');
+
+		$strong.on('click',function(){
+			$this=$(this).closest('li').index();
+			console.log($this);
+			var $price=$('.cleardiv').find('strong').html()-0-$('.goodsmessage').eq($this).find('.total').html()-0;
+			
+			$('.cleardiv').find('strong').html($price);
 
 
-	$('.goodsmessage').children('big')
+			$title=$('.goodsmessage').eq($this).find('.title').html();
+			console.log($title)
+
+			for(var i=0;i<goods.length;i++){
+					// 找出要删除的商品
+					if(goods[i].title === $title){
+						goods.splice(i,1);
+						break;
+					}
+			}
+
+				// 更新cookie
+				document.cookie = 'goods=' + JSON.stringify(goods);
+				// console.log($('.goodsmessage')[$this])
+			
+				$('.goodsmessage').eq($this).remove();
+
+			
+				
+
+			
+		})
+
+		// var now=new Date();
+		// now.setDate(now.getDate()+3);
+		// document.cookie='goods='+JSON.stringify()+';expries='+now;
+
+
+
+
+
+
+
 })

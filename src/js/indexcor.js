@@ -42,7 +42,7 @@ var introduce=document.getElementsByClassName('introduce')[0];
 	var goods=[];
 	var cookies=document.cookie.split('; ');
 	
-	console.log(cookies)
+	
 	for(var i=0;i<cookies.length;i++){
 
 		var arr=cookies[i].split('=');
@@ -73,7 +73,9 @@ var introduce=document.getElementsByClassName('introduce')[0];
 			carlist.price=children[2].children[0].children[0].innerHTML;
 			carlist.disco=children[2].children[0].children[1].innerHTML;
 			
-			
+			var num = count.innerHTML;
+
+			count.innerHTML=num-0+1;
 			console.log(carlist.title);
 			if(goods.length===0){
 

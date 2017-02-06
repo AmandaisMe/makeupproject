@@ -180,19 +180,23 @@ main{
                          }
                          big{
                          margin:0 10px 0 10px;
+                         cursor:pointer;
                          }
                      }
                     }
-                    img{
-                    width:98px;
-                    height:98px;
-                    border:1px solid #eee;
+                        img{
+                        width:98px;
+                        height:98px;
+                        border:1px solid #eee;
+                        }
+                        span{
+                        font-size:13px;
+                        color:#666;
+                        }
+                        strong{
+                        cursor:pointer;
+                        }
                     }
-                    span{
-                    font-size:13px;
-                    color:#666;
-                    }
-                }
                 }
                 
 
