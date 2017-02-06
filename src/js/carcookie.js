@@ -5,13 +5,15 @@ window.onload=function(){
 	
 	var goods=[];
 	var cookies=document.cookie.split('; ');
-	console.log(cookies)
 	
+	console.log(cookies)
 	for(var i=0;i<cookies.length;i++){
 
 		var arr=cookies[i].split('=');
 		if(arr[0]==='goods'){
-			goods=JSON.parse(arr[1]);
+
+			// goods=JSON.parse(arr[1]);
+			console.log(arr)
 		}
 	}
 	
@@ -21,12 +23,12 @@ window.onload=function(){
 		var target=e.target || e.srcElement;
 		if(target.className.toLowerCase()==='carlist'){
 			var currentli=target.parentElement.parentElement;
-			var currentid=currentli.getAttribute('guid');
+			
 			var  children=currentli.children;
 			
 
 			var carlist={};
-			carlist.id=currentid;
+		
 			carlist.qty=1;
 			carlist.imgurl=children[0].innerHTML;
 			console.log(carlist.imgurl)
@@ -35,15 +37,15 @@ window.onload=function(){
 			carlist.price=children[2].children[0].children[0].innerHTML;
 			carlist.disco=children[2].children[0].children[1].innerHTML;
 			
-			console.log(carlist)
 			
+			console.log(carlist)
 			if(goods.length===0){
 				goods.push(carlist);
 
 			}else {
 				for(var i=0;i<goods.length;i++){
 
-					if(goods[i].id===currentid){
+					if(goods[i].title===carlist.title){
 
 						goods[i].qty++;
 
