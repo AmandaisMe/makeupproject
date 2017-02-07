@@ -37,7 +37,7 @@ window.onload=function(){
 	},3000);
 
 
-	//放大镜
+	//cookies
 
 var introduce=document.getElementsByClassName('introduce')[0];
 	var count=document.getElementsByClassName('count')[0];
@@ -105,6 +105,7 @@ var introduce=document.getElementsByClassName('introduce')[0];
 			}
 			var now=new Date();
 			now.setDate(now.getDate()+3)
+			count.innerHTML=num-0+1;
 			document.cookie='goods='+JSON.stringify(goods)+';expires='+now;
 			
 		}

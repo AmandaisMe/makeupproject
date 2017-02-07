@@ -204,7 +204,11 @@ main{
                                cursor:pointer;
                          }
                          .num{
-                            width:20px ;
+                             border: 1px solid #666;
+                            width: 20px;
+                            display: inline-block;
+                            text-align: center;
+                            font-weight:normal;
                            
                          }
                     }

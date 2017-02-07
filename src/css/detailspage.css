@@ -154,7 +154,7 @@ nav .wrap h1 { width: 30%; }
 
 .nav-right a:nth-child(3) { background: url(../img/imgindex/topnav.png) 0 -65px; width: 30px; height: 40px; cursor: pointer; float: right; }
 
-.nav-right span { display: inline-block; margin-top: 11px; }
+.nav-right span { display: inline-block; }
 
 .listdata { border: 2px solid #eee; width: 22%; height: 200px; right: 118px; bottom: 191px; display: none; }
 

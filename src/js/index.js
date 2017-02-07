@@ -1,6 +1,7 @@
 
 $(function(){
-	$.post('../php/session.php',function(data){
+	//session数据
+	$.post('php/session.php',function(data){
 		var $obj = eval('(' + data + ')');
 		console.log($obj)
 		if($obj.state){
@@ -97,17 +98,15 @@ $(function(){
 
 	//header
 	$img=$('.picitem').find("img");
-	$big=$('#bigbanner');
-	$small=$("#minbanner");
+	
 	$img.on('click',function(){
-		$big.css({opacity:1,'position': 'relative'}).show();
-		$small.hide().css({opacity:0});
-		$('.picitem').find("img").attr('src','../img/imgindex/unfold.jpg').addClass('unfold').
+		$('#bigbanner').css({opacity:1,'position':'relative'}).show();
+		$("#minbanner").hide().css({opacity:0});
+		$('.picitem').find("img").attr('src','img/imgindex/unfold.jpg').addClass('unfold').
 		on('click',function(){
-		console.log(1)
-		$big.css({opacity:0}).hide();
-		$small.show().css({opacity:1});
-		$('.picitem').find("img").attr('src','../img/imgindex/fold.jpg');
+		$('#bigbanner').css({opacity:0}).hide();
+		$("#minbanner").show().css({opacity:1});
+		$('.picitem').find("img").attr('src','img/imgindex/fold.jpg');
 		})
 
 
@@ -127,8 +126,6 @@ $(function(){
 	});
 
 	
-	
-
   //brandlist
 	$span=$('.brand').find('span');
 	$prolist=$('.prolist').children();
@@ -148,9 +145,9 @@ $(function(){
 	
 	$sea=$('.seas');
 	$sea.on('mouseenter',function(){
-		$sea.find('img').attr('src','../img/imgindex/home_overseas_current.gif');
+		$sea.find('img').attr('src','img/imgindex/home_overseas_current.gif');
 	}).on('mouseleave',function(){
-		$sea.find('img').attr('src','../img/imgindex/home_overseas.gif');
+		$sea.find('img').attr('src','img/imgindex/home_overseas.gif');
 	});
 
 	$move=$('#mainright').children();

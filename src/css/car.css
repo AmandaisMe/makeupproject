@@ -95,7 +95,7 @@ main .wrap .checkgoods .goodslist .goodslists li strong { cursor: pointer; }
 
 main .wrap .checkgoods .goodslist .goodslists .add, main .wrap .checkgoods .goodslist .goodslists .less { font-style: normal; margin: 8px; cursor: pointer; }
 
-main .wrap .checkgoods .goodslist .goodslists .num { width: 20px; }
+main .wrap .checkgoods .goodslist .goodslists .num { border: 1px solid #666; width: 20px; display: inline-block; text-align: center; font-weight: normal; }
 
 main .wrap .cleardiv { margin: 20px 0 20px 0; display: -webkit-flex; width: 100%; font-size: 13px; cursor: pointer; }
 

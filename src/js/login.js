@@ -49,14 +49,15 @@ $(function() {
         pass = _password.val();
         username = _username.val();
 
-        $.post('../php/login.php', {
+        $.post("php/login.php", {
             phone: username,
             password: pass
         }, function(res) {
-           console.log(res)
+           
             if (res.length>3) {
-                window.location.href = 'index.html';
-                console.log(1)
+               console.log(res.length)
+                window.location.href ='index.html';
+               
             } else {
                 alert('密码或用户名错误');
                 

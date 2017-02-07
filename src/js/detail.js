@@ -69,7 +69,7 @@ window.onload=function(){
 		}
 	}
 
-	xhr.open('get',"../php/object.json",true);
+	xhr.open('get',"php/object.json",true);
 	xhr.send();
 }
 

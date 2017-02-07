@@ -25,7 +25,7 @@ $(function(){
 			
 
 			$('<li/>').addClass('goodsmessage').html('<div>'+'<a>'+'<img src='+goods[i].imgurl+'>'+'</a>'+'<span class="title">'+goods[i].title+'</span>'+'</div>'
-			+'<div>'+'<span>'+goods[i].price+'</span>'+'<i class="less">'+"-"+'</i>'+'<input class="num" type="text" value='+goods[i].qty+'>'+'<em class="add">'+"+"+'</em>'+'</span >'+'<span class="total">'+goods[i].price*goods[i].qty+'</span>'+'<span>'+'<strong>'+'删除'+
+			+'<div>'+'<span>'+goods[i].price+'</span>'+'<i class="less">'+"-"+'</i>'+'<strong class="num">'+goods[i].qty+'</strong>'+'<em class="add">'+"+"+'</em>'+'</span >'+'<span class="total">'+goods[i].price*goods[i].qty+'</span>'+'<span>'+'<strong>'+'删除'+
 			'</strong>'+'<big>'+'收藏'+'</big>'+'</div>').appendTo($('.goodslists'));
 			
 			
@@ -38,27 +38,40 @@ $(function(){
 		$('.cleardiv').find('strong').html(sum);
 		$('.cleardiv').find('big').html(pricenum);
 
+		//数量减少
+		$('.goodsmessage').on('click','i',function(){
+				$less=$(this).siblings('.num').html();
+				if($less<=0){
+					$less==0;
+				}else{
+					$less--;
+					$(this).siblings('.num').html($less)
+				}
+				$lessnum=pricenum-$less;
+			$('.cleardiv').find('big').html(pricenum);
 
-		// $('.less').on('click',function(){
-		// 		$('.num').val($('.num').val()-1);
+			});
+		
+		$('.goodsmessage').on('click','em',function(){
+
+			$less=$(this).siblings('.num').html();
+				$less++;
+				$(this).siblings('.num').html($less);
 				
-		// 	});
-		// $('.add').on('click',function(){
 
-		// 		// $('.num').val(parseInt($('.num').val()+1));
-
-		// })
+		})
 		
 	}	
+		
 		
 		
 
 		$('.allclear').on('click',function(){
 				$('.goodslists').remove();
-
 				var now=new Date();
 				now.setDate(now.getDate()-3);
-				document.cookie = 'goods=' + JSON.stringify(goods)+';expires='+now;
+				document.cookie ='goods=' + JSON.stringify(goods)+';expires='+now;
+
 					
 		});
 

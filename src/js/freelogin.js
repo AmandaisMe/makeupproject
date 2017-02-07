@@ -37,7 +37,7 @@ $(function(){
 	
 	$(':button').click(function(){
 		console.log(1)
-				$.post('../php/freelogin.php',{
+				$.post('php/freelogin.php',{
 					phone:$('[name=phone]').val(),
 					password: $('[name=password]').val(),
 					confirm: $('[name=confirmpassword]').val(),
