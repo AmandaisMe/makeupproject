@@ -72,13 +72,12 @@ var introduce=document.getElementsByClassName('introduce')[0];
 			carlist.imgurl=children[0].children[0].getAttribute('src');
 			console.log(carlist.imgurl)
 			carlist.title=children[1].innerHTML;
-			
 			carlist.price=children[2].children[0].children[0].innerHTML;
 			carlist.disco=children[2].children[0].children[1].innerHTML;
 			
 			var num = count.innerHTML;
 
-			count.innerHTML=num-0+1;
+			count.innerHTML=num+1-0;
 			console.log(carlist.title);
 			if(goods.length===0){
 
@@ -105,7 +104,7 @@ var introduce=document.getElementsByClassName('introduce')[0];
 			}
 			var now=new Date();
 			now.setDate(now.getDate()+3)
-			count.innerHTML=num-0+1;
+			
 			document.cookie='goods='+JSON.stringify(goods)+';expires='+now;
 			
 		}

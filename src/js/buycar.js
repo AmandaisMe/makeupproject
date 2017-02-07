@@ -32,7 +32,7 @@ $(function(){
 			sum+=goods[i].price*goods[i].qty;
 			pricenum+=goods[i].qty;
 			
-
+			$('.count').text(Number(goods[i].qty))
 		}
 
 		$('.cleardiv').find('strong').html(sum);
