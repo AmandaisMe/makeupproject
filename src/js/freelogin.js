@@ -36,7 +36,7 @@ $(function(){
 		
 	
 	$(':button').click(function(){
-		console.log(1)
+		
 				$.post('php/freelogin.php',{
 					phone:$('[name=phone]').val(),
 					password: $('[name=password]').val(),
@@ -44,8 +44,9 @@ $(function(){
 
 				}, function(response){
 					console.log(response.length)
-					if(response.length==3){
-							window.location.href='index.html';
+					if(response.length==2){
+						alert('注册成功');
+						window.location.href='index.html';
 						}else{
 							alert('已被注册');
 						}

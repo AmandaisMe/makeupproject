@@ -1,15 +1,16 @@
 
 $(function(){
 	//session数据
-	$.post('php/session.php',function(data){
-		var $obj = eval('(' + data + ')');
-		console.log($obj)
-		if($obj.state){
-			$('.header-left li:gt(0)').remove();
-			console.log(1)
-			$('<li/>').html('欢迎您，知我用户:'+$obj.clientName+'<a href="#" class="loginout">退出</a>').appendTo('.header-left')
-		} 
-	})
+	// $.post('php/session.php',function(data){
+	// 	console.log(data)
+	// 	var $obj = data;
+	// 	console.log($obj)
+	// 	if($obj.state){
+	// 		$('.header-left li:gt(0)').remove();
+	// 		console.log(1)
+	// 		$('<li/>').html('欢迎您，知我用户:'+$obj.clientName+'<a href="#" class="loginout">退出</a>').appendTo('.header-left')
+	// 	} 
+	// })
 
 	// $('.loginout').on('click',function(){
 	// 		$.post("php/loginout.php",function(data){

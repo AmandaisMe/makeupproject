@@ -53,10 +53,12 @@ $(function() {
             phone: username,
             password: pass
         }, function(res) {
-           
-            if (res.length>3) {
-               console.log(res.length)
+           console.log(res)
+             console.log(res.length)
+            if (res.length>39) {
+             
                 window.location.href ='index.html';
+                alert('登录成功')
                
             } else {
                 alert('密码或用户名错误');
