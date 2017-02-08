@@ -1,1 +1,1 @@
-This is project for makeup 项目仅供参考！
+This is project for makeup just for ref
