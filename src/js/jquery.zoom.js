@@ -1,4 +1,4 @@
-;(function($){
+define(['jquery'],function($){
     $.fn.zoom = function(options){
         var defauls = {
             width:300,
@@ -99,4 +99,4 @@
             }
         });
     }
-})(jQuery);
+})

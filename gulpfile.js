@@ -39,25 +39,24 @@ gulp.task('server',function(){
 	gulp.watch('./src/php/*.php').on('change',browser.reload);
 });
 
-// //合并插件
-// var concat=require('gulp-concat');
-// //压缩插件
-// var uglify=require('gulp-uglify');
-// //重命名
+//合并插件
+var concat=require('gulp-concat');
+//压缩插件
+var uglify=require('gulp-uglify');
+//重命名
 // var rename=require('gulp-rename');
 
-// gulp.task('mergejs',function(){
+gulp.task('mergejs',function(){
+	return gulp.src(['./src/js/index.js','./src/js/buycar.js','./src/js/indexcor.js'])
+		.pipe(concat('index.js'))
+		.pipe(gulp.dest('./dist/js'))
+		.pipe(uglify({
+			compress:false,//类型。boolean 默认：true 是否完全压缩
+			preserveComments:'all' //保留所有注释
+		}))
 
-// 	gulp.src('.src/js/*.js')
-// 		.pipe(concat('all.js'))
-// 		.pipe(gulp.dest('./dist/js'))
-// 		.pipe(uglify({
-// 			compress:false,//类型。boolean 默认：true 是否完全压缩
-// 			preserveComments:'all' //保留所有注释
-// 		}))
-
-// 		.pipe(rename({
-// 			suffix:'.min' //修改后缀名
-// 		}))
-// 		.pipe(gulp.dest('.dist/js'))
-// })
+		// .pipe(rename({
+		// 	suffix:'.min' //修改后缀名
+		// }))
+		// .pipe(gulp.dest('dist/js'))
+})
