@@ -1,10 +1,10 @@
 requirejs(['js/config.js'],function(){
-	requirejs(['indexhome','detail'],function(homepage,d){
+	requirejs(['indexhome'],function(homepage,d){
 		
 		
-		// homepage.cookie();
+		homepage.cookie();
 
-		d.detail();
+		// d.detail();
 		homepage.page();
 	})
 })
