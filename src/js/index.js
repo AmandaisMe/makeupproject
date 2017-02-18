@@ -163,15 +163,15 @@ define(['jquery'],function(){
 
 				$('.next').on('click',function(){
 					
-					$('.introduce').animate({'left':'-1100px'},1000);
-					$length=$('.introduce li').width()*$('.introduce li').length;
+					// $('.introduce').animate({'left':'-1100px'},1000);
+					// $length=$('.introduce li').width()*$('.introduce li').length;
 
-					$left=$('.introduce').css('left').slice(0,-2);
-					console.log($left)
-					if($left<=-1100){
-						$('.introduce').animate({'left':"0"},1000);
+					// $left=$('.introduce').css('left').slice(0,-2);
+					// console.log($left)
+					// if($left<=-1100){
+					// 	$('.introduce').animate({'left':"0"},1000);
 
-					}
+					// }
 					
 				})
 				$('.prev').on('click',function(){

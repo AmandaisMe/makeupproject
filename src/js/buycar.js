@@ -28,6 +28,7 @@ $(function() {
             pricenum += goods[i].qty;
 
             $('.count').text(Number(goods[i].qty))
+            console.log($('.count').text(Number(goods[i].qty)))
         }
 
         $('.cleardiv').find('strong').html(sum);
@@ -44,6 +45,7 @@ $(function() {
             }
             $lessnum = pricenum - $less;
             $('.cleardiv').find('big').html(pricenum);
+            console.log(1)
 
         });
 
