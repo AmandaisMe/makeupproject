@@ -1,8 +1,9 @@
 <?php
 
 	include 'DB.php';
-	$username=$_POST["phone"];
-	$password=$_POST["password"];
+	$username=$_POST['phone'];
+	
+	$password=$_POST['password'];
 	$sql="SELECT * from login where phone='$username' and password='$password'";
 	$result = query($sql);
 	

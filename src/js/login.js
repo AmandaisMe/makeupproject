@@ -34,7 +34,9 @@ define(['jquery'],function(){
                     }
 
                 })
+              
                 //php请求
+                $('.header-left').find('li').eq(1).html()
                 $('#submit').click(function() {
                     _username = $('[name=username]');
                     _password = $('[name=password]');
@@ -45,13 +47,25 @@ define(['jquery'],function(){
                         phone: username,
                         password: pass
                     }, function(res) {
+                       console.log(typeof res)
+                       // data=JSON.parse(res)
+                       // split(res)
                        console.log(res)
-                         console.log(res.length)
+                         console.log(res.substring(11,21))
+                          var data= res.substring(11,21)
                         if (res.length>39) {
-                         
-                            window.location.href ='index.html';
-                            alert('登录成功')
-                           
+                            // window.location.href ='index.html';
+                            alert('登录成功');
+                            // setCookie
+                          var data= res.substring(11,21)
+                          
+                           console.log(data)
+                           $hello=$('.header-left').find('li').eq(1).html('<span>'+"你好!欢迎"+'</span>');
+                           $ph=$('.header-left').find('li').eq(2).html('<span>'+data+"登录"+'</span>');
+
+                            
+                           setCookie();
+                           getCookie();
                         } else {
                             alert('密码或用户名错误');
                             
@@ -59,7 +73,19 @@ define(['jquery'],function(){
                        
                     })
                 })
-
+                setCookie=function(phone, password) {
+                                var days = 10;
+                                var ex = new Date();
+                                ex.setTime(ex.getTime() + days * 24 * 60 * 60 * 1000);
+                                document.cookie = phone + "=" + password + ";expires=" + ex;
+                             },
+                            getCookie=function(phone) {
+                                var a;
+                                var reg = new RegExp("(^|)" + phone + "=([^;]*)(;|$)");
+                                if(a = document.cookie.match(reg)) {
+                                    return a[2];
+                                }
+                            }
                 //随机数
 
                 function random(){
